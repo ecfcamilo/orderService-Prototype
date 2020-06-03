@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Ality - Admin Dashboard Template</title>
+  <title>Simplify - Simplificar para Otimizar</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons.min.css">
+  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/bundles/morris/morris.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -157,7 +162,7 @@
                     <i class="fas fa-bell"></i>
                   </span>
                   <span class="dropdown-item-desc">
-                    Welcome to Ality template!
+                    Welcome to Simplify!
                     <span class="time">Yesterday</span>
                   </span>
                 </a>
@@ -169,19 +174,19 @@
           </li>
           <li class="dropdown"><a href="#" data-toggle="dropdown"
               class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-              <img alt="image" src="assets/img/user.png" class="user-img-radious-style">
+              <img alt="image" src="assets/img/jr.jpg" class="user-img-radious-style">
               <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-title">Hello Sarah Smith</div>
+              <div class="dropdown-title">Levino Marçal Junior</div>
               <a href="profile.html" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
-              <a href="timeline.html" class="dropdown-item has-icon">
+              <!--<a href="timeline.html" class="dropdown-item has-icon">
                 <i class="fas fa-bolt"></i> Activities
               </a>
               <a href="" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Settings
-              </a>
+              </a>-->
               <div class="dropdown-divider"></div>
               <a href="auth-login.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -192,208 +197,52 @@
       </nav>
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index.html">
-              <img alt="image" src="assets/img/logo.png" class="header-logo" />
-              <span class="logo-name">Ality</span>
+          <div class="sidebar-brand py-3 d-block" style="height: auto !important;">
+            <a href="index4.html">
+              <img alt="image" src="assets\img\pnl.png" height="50" width="100" />
             </a>
           </div>
           <ul class="sidebar-menu">
-            <li class="menu-header">Main</li>
-            <li class="dropdown active">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
-              <ul class="dropdown-menu">
-                <li class="active"><a class="nav-link" href="index.html">Dashboard V1</a></li>
-                <li><a class="nav-link" href="index2.html">Dashboard V2</a></li>
-              </ul>
+            <li class="menu-header">Menu</li>
+            <li class="active">
+              <a href="index3.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard Manager</span></a>
             </li>
+            <li class="active">
+              <a href="index4.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
+            </li>
+
+            <li class="">
+              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
+            </li>
+
+            <li class="">
+              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Services</span></a>
+            </li>
+
+            <!-- <li class="">
+              <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Products</span></a>
+            </li> -->
+
+            <!--
+            <li class="">
+              <a href="warehouse.html" class="nav-link"><i class="fas fa-archive"></i><span>Warehouse</span></a>
+            </li>
+            -->
+
+
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-broom"></i><span>Widgets</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Chart Widgets</a></li>
-                <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
+                <li><a href="trucks.html">Trucks</a></li>
+                <li><a href="transfer.html">Movements</a></li>
+                <li><a href="product.html">Products</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fab fa-accusoft"></i><span>Apps</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chat.html">Chat</a></li>
-                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-link" href="blog.html">Blog</a></li>
-                <li><a class="nav-link" href="calendar.html">Calendar</a></li>
-              </ul>
+
+            <li class="">
+              <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="far fa-envelope"></i><span>Email</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="email-inbox.html">Inbox</a></li>
-                <li><a class="nav-link" href="email-compose.html">Compose</a></li>
-                <li><a class="nav-link" href="email-read.html">read</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">UI Elements</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-briefcase"></i><span>Basic
-                  Components</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="alert.html">Alert</a></li>
-                <li><a class="nav-link" href="badge.html">Badge</a></li>
-                <li><a class="nav-link" href="breadcrumb.html">Breadcrumb</a></li>
-                <li><a class="nav-link" href="buttons.html">Buttons</a></li>
-                <li><a class="nav-link" href="collapse.html">Collapse</a></li>
-                <li><a class="nav-link" href="dropdown.html">Dropdown</a></li>
-                <li><a class="nav-link" href="checkbox-and-radio.html">Checkbox &amp; Radios</a></li>
-                <li><a class="nav-link" href="list-group.html">List Group</a></li>
-                <li><a class="nav-link" href="media-object.html">Media Object</a></li>
-                <li><a class="nav-link" href="navbar.html">Navbar</a></li>
-                <li><a class="nav-link" href="pagination.html">Pagination</a></li>
-                <li><a class="nav-link" href="popover.html">Popover</a></li>
-                <li><a class="nav-link" href="progress.html">Progress</a></li>
-                <li><a class="nav-link" href="tooltip.html">Tooltip</a></li>
-                <li><a class="nav-link" href="flags.html">Flag</a></li>
-                <li><a class="nav-link" href="typography.html">Typography</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-qrcode"></i><span>Advanced</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="avatar.html">Avatar</a></li>
-                <li><a class="nav-link" href="card.html">Card</a></li>
-                <li><a class="nav-link" href="modal.html">Modal</a></li>
-                <li><a class="nav-link" href="sweet-alert.html">Sweet Alert</a></li>
-                <li><a class="nav-link" href="toastr.html">Toastr</a></li>
-                <li><a class="nav-link" href="empty-state.html">Empty State</a></li>
-                <li><a class="nav-link" href="multiple-upload.html">Multiple Upload</a></li>
-                <li><a class="nav-link" href="pricing.html">Pricing</a></li>
-                <li><a class="nav-link" href="tabs.html">Tab</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i><span>Blank Page</span></a></li>
-            <li class="menu-header">Ality</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="far fa-list-alt"></i><span>Forms</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="basic-form.html">Basic Form</a></li>
-                <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
-                <li><a class="nav-link" href="form-wizard.html">Form Wizard</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fab fa-buromobelexperte"></i><span>Tables</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="basic-table.html">Basic Tables</a></li>
-                <li><a class="nav-link" href="advance-table.html">Advanced Table</a></li>
-                <li><a class="nav-link" href="datatables.html">Datatable</a></li>
-                <li><a class="nav-link" href="export-table.html">Export Table</a></li>
-                <li><a class="nav-link" href="editable-table.html">Editable Table</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-chart-line"></i><span>Charts</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chart-amchart.html">amChart</a></li>
-                <li><a class="nav-link" href="chart-apexchart.html">apexchart</a></li>
-                <li><a class="nav-link" href="chart-echart.html">eChart</a></li>
-                <li><a class="nav-link" href="chart-chartjs.html">Chartjs</a></li>
-                <li><a class="nav-link" href="chart-sparkline.html">Sparkline</a></li>
-                <li><a class="nav-link" href="chart-morris.html">Morris</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Icons</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="icon-font-awesome.html">Font Awesome</a></li>
-                <li><a class="nav-link" href="icon-material.html">Material Design</a></li>
-                <li><a class="nav-link" href="icon-ionicons.html">Ion Icons</a></li>
-                <li><a class="nav-link" href="icon-weather-icon.html">Weather Icon</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">Media</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-camera-retro"></i><span>Gallery</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="light-gallery.html">Light Gallery</a></li>
-                <li><a href="gallery1.html">Gallery 2</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="far fa-clone"></i><span>Sliders</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="carousel.html">Bootstrap Carousel.html</a></li>
-                <li><a class="nav-link" href="owl-carousel.html">Owl Carousel</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="timeline.html"><i class="fab fa-hubspot"></i><span>Timeline</span></a></li>
-            <li class="menu-header">Maps</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fab fa-google"></i> <span>Google
-                  Maps</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                <li><a href="gmaps-marker.html">Marker</a></li>
-                <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                <li><a href="gmaps-route.html">Route</a></li>
-                <li><a href="gmaps-simple.html">Simple</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="vector-map.html"><i class="fas fa-map-marked-alt"></i><span>Vector
-                  Map</span></a></li>
-            <li class="menu-header">Pages</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-user-shield"></i><span>Auth</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                <li><a href="auth-login.html">Login</a></li>
-                <li><a href="auth-register.html">Register</a></li>
-                <li><a href="auth-reset-password.html">Reset Password</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i
-                  class="fas fa-exclamation-triangle"></i><span>Errors</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="errors-503.html">503</a></li>
-                <li><a class="nav-link" href="errors-403.html">403</a></li>
-                <li><a class="nav-link" href="errors-404.html">404</a></li>
-                <li><a class="nav-link" href="errors-500.html">500</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-signs"></i><span>Other Pages</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="create-post.html">Create Post</a></li>
-                <li><a class="nav-link" href="posts.html">Posts</a></li>
-                <li><a class="nav-link" href="profile.html">Profile</a></li>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
-                <li><a class="nav-link" href="invoice.html">Invoice</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-level-down-alt"></i><span>Multilevel</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Menu 1</a></li>
-                <li class="dropdown">
-                  <a href="#" class="has-dropdown">Menu 2</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Child Menu 1</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="has-dropdown">Child Menu 2</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Child Menu 1</a></li>
-                        <li><a href="#">Child Menu 2</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"> Child Menu 3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+
           </ul>
         </aside>
       </div>
@@ -401,493 +250,592 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Dashboard</h1>
+            <h1>Dashboard - Manager</h1>
           </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-6">
-              <div class="card">
-                <div class="card-body card-type-3">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="text-muted mb-0">Orders</h6>
-                      <span class="font-weight-bold mb-0">450</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="card-circle l-bg-orange text-white">
-                        <i class="fas fa-book-open"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 10%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6">
-              <div class="card">
-                <div class="card-body card-type-3">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="text-muted mb-0">New Booking</h6>
-                      <span class="font-weight-bold mb-0">1,562</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="card-circle l-bg-cyan text-white">
-                        <i class="fas fa-briefcase"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 7.8%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6">
-              <div class="card">
-                <div class="card-body card-type-3">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="text-muted mb-0">Inquiry</h6>
-                      <span class="font-weight-bold mb-0">7,897</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="card-circle l-bg-green text-white">
-                        <i class="fas fa-phone"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 15%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6">
-              <div class="card">
-                <div class="card-body card-type-3">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="text-muted mb-0">Earning</h6>
-                      <span class="font-weight-bold mb-0">$8,965</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="card-circle l-bg-purple text-white">
-                        <i class="fas fa-dollar-sign"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 5.4%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Revenue Chart</h4>
-                </div>
-                <div class="card-body">
-                  <canvas id="chart-1"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Revenue Chart</h4>
-                </div>
-                <div class="card-body">
-                  <canvas id="myChart"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-12 col-lg-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Project Details</h4>
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive table-invoice">
-                    <table class="table table-striped">
-                      <tr>
-                        <th>Project</th>
-                        <th>Customer</th>
-                        <th>Team</th>
-                        <th>Status</th>
-                        <th>Start Date</th>
-                        <th>Delivery Date</th>
-                        <th>Action</th>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Project 1</a></td>
-                        <td class="font-weight-600">Sarah Smith</td>
-                        <td class="text-truncate">
-                          <ul class="list-unstyled order-list m-b-0 m-b-0">
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-8.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Wildan Ahdian">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-9.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="John Deo">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-10.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Sarah Smith">
-                            </li>
-                            <li class="avatar avatar-sm">
-                              <span class="badge badge-primary">+4</span>
-                            </li>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="badge badge-warning">In Progress</div>
-                        </td>
-                        <td>July 19, 2018</td>
-                        <td>March 25, 2019</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Project 2</a></td>
-                        <td class="font-weight-600">Airi Satou</td>
-                        <td class="text-truncate">
-                          <ul class="list-unstyled order-list m-b-0 m-b-0">
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-3.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Wildan Ahdian">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-7.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Sarah Smith">
-                            </li>
-                            <li class="avatar avatar-sm">
-                              <span class="badge badge-primary">+2</span>
-                            </li>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="badge badge-success">Completed</div>
-                        </td>
-                        <td>March 21, 2015</td>
-                        <td>July 22, 2017</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Project 3</a></td>
-                        <td class="font-weight-600">Ashton Cox</td>
-                        <td class="text-truncate">
-                          <ul class="list-unstyled order-list m-b-0 m-b-0">
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-1.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Wildan Ahdian">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-5.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="John Deo">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-9.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Sarah Smith">
-                            </li>
-                            <li class="avatar avatar-sm">
-                              <span class="badge badge-primary">+5</span>
-                            </li>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="badge badge-danger">cancelled</div>
-                        </td>
-                        <td>January 02, 2018</td>
-                        <td>March 12, 2019</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Project 4</a></td>
-                        <td class="font-weight-600">Cara Stevens</td>
-                        <td class="text-truncate">
-                          <ul class="list-unstyled order-list m-b-0">
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-4.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Wildan Ahdian">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-7.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="John Deo">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-10.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="John Deo">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-2.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Sarah Smith">
-                            </li>
-                            <li class="avatar avatar-sm">
-                              <span class="badge badge-primary">+1</span>
-                            </li>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="badge badge-warning">In Progress</div>
-                        </td>
-                        <td>July 19, 2018</td>
-                        <td>March 25, 2019</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Project 5</a></td>
-                        <td class="font-weight-600">John Doe</td>
-                        <td class="text-truncate">
-                          <ul class="list-unstyled order-list m-b-0">
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-8.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Wildan Ahdian">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-4.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="John Deo">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-3.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Sarah Smith">
-                            </li>
-                            <li class="avatar avatar-sm">
-                              <span class="badge badge-primary">+2</span>
-                            </li>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="badge badge-success">Completed</div>
-                        </td>
-                        <td>May 11, 2017</td>
-                        <td>March 15, 2018</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Project 6</a></td>
-                        <td class="font-weight-600">Angelica Ramos</td>
-                        <td class="text-truncate">
-                          <ul class="list-unstyled order-list m-b-0">
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-3.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Wildan Ahdian">
-                            </li>
-                            <li class="team-member team-member-sm">
-                              <img class="rounded-circle" src="assets/img/users/user-1.png" alt="user"
-                                data-toggle="tooltip" title="" data-original-title="Sarah Smith">
-                            </li>
-                            <li class="avatar avatar-sm">
-                              <span class="badge badge-primary">+2</span>
-                            </li>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="badge badge-danger">cancelled</div>
-                        </td>
-                        <td>November 02, 2018</td>
-                        <td>April 05, 2019</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Earning Details</h4>
-                </div>
-                <div class="card-body">
-                  <h4 class="header-title">Earning Reports</h4>
-                  <p class="text-muted">1 Mar - 31 Mar Data</p>
-                  <h2 class="mb-3"><i class="mdi mdi-currency-usd text-primary"></i>$1,65,203</h2>
-                  <div class="row mb-1">
-                    <div class="col-6">
-                      <p class="text-muted mb-1">This Month</p>
-                      <h3 class="mt-0 font-20">$117,968
+          <div class="section-body">
+            <div class="row">
+
+              <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <i class="fas fa-clipboard-list card-icon col-red"></i>
+                <div class="card-wrap">
+                  <div class="padding-20">
+                    <div class="text-right">
+                      <h3 class="font-light mb-0">
+                        <i class="ti-arrow-up text-success"></i> 30
                       </h3>
+                      <span class="text-muted">Jobs Needing Approval</span>
                     </div>
-                    <div class="col-6">
-                      <p class="text-muted mb-1">Last Month</p>
-                      <h3 class="mt-0 font-20">$74,568
+                    <p class="mb-3 text-muted pull-left text-sm">
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <i class="material-icons card-icon col-green">assignment_turned_in</i>
+                <div class="card-wrap">
+                  <div class="padding-20">
+                    <div class="text-right">
+                      <h3 class="font-light mb-0">
+                        <i class="ti-arrow-up text-success"></i> 80
+
                       </h3>
+                      <span class="text-muted">Job Report</span>
+                    </div>
+                    <p class="mb-3 text-muted pull-left text-sm">
+                      <a href="#" class="btn btn-icon btn-lg btn-success"><i class="fas fa-check"></i></a> 
+                      <span class="text-nowrap">Input Order</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <i class="fas fa-chart-line card-icon col-orange"></i>
+                <div class="card-wrap">
+                  <div class="padding-20">
+                    <div class="text-right">
+                      <h3 class="font-light mb-0">
+                        <i class="ti-arrow-up text-success"></i> 7
+                      </h3>
+                      <span class="text-muted">Average Hours day</span>
+                    </div>
+                    <p class="mb-3 text-muted pull-left text-sm"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <i class="fas fa-dollar-sign card-icon col-cyan"></i>
+                <div class="card-wrap">
+                  <div class="padding-20">
+                    <div class="text-right">
+                      <h3 class="font-light mb-0">
+                        <i class="ti-arrow-up text-success"></i> $3,200
+                      </h3>
+                      <span class="text-muted">Receivable</span>
+                    </div>
+                    <p class="mb-3 text-muted pull-left text-sm"> </p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card gradient-bottom" style="height: 350px">
+                  <div class="card-header">
+                    <h4>Technician Dashboard</h4>
+                    <!-- <div class="card-header-action dropdown">
+                      <a href="#" data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Month</a>
+                      <ul class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                        <li class="dropdown-title">Select Period</li>
+                        <li><a href="#" class="dropdown-item">Today</a></li>
+                        <li><a href="#" class="dropdown-item">Week</a></li>
+                        <li><a href="#" class="dropdown-item active">Month</a></li>
+                        <li><a href="#" class="dropdown-item">This Year</a></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                  <div class="card-body" id="top-5-scroll">
+                    <ul class="list-unstyled list-unstyled-border">
+                      <li class="media">
+                        <img class="mr-3 rounded" width="55" src="assets/img/users/user_profile-2.jpg" alt="product">
+                        <div class="media-body">
+                          <div class="float-right">
+                            <div class="font-weight-600 text-muted text-small"></div>
+                            <a href="index4.html">Details</a>
+                          </div>
+                          <div class="media-title">Justin</div>
+                          <!-- <div class="mt-1">
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-primary" data-width="61%"></div>
+                              <div class="budget-price-label">6,5h</div>
+                            </div>
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-danger" data-width="38%"></div>
+                              <div class="budget-price-label">3</div>
+                            </div>
+                          </div> -->
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="mr-3 rounded" width="55" src="assets/img/users/user_profile-3.jpg" alt="product">
+                        <div class="media-body">
+                          <div class="float-right">
+                            <div class="font-weight-600 text-muted text-small"></div>
+                            <a href="index4.html">Details</a>
+                          </div>
+                          <div class="media-title">Ian</div>
+                          <!-- <div class="mt-1">
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-primary" data-width="78%"></div>
+                              <div class="budget-price-label">7,00h</div>
+                            </div>
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-danger" data-width="55%"></div>
+                              <div class="budget-price-label">4</div>
+                            </div>
+                          </div> -->
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="mr-3 rounded" width="55" src="assets/img/users/user_profile-4.jpg" alt="product">
+                        <div class="media-body">
+                          <div class="float-right">
+                            <div class="font-weight-600 text-muted text-small"></div>
+                            <a href="index4.html">Details</a>
+                          </div>
+                          <div class="media-title">Ryan</div>
+                          <!-- <div class="mt-1">
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-primary" data-width="38%"></div>
+                              <div class="budget-price-label">5,85h</div>
+                            </div>
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-danger" data-width="55%"></div>
+                              <div class="budget-price-label">4</div>
+                            </div>
+                          </div> -->
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="mr-3 rounded" width="55" src="assets/img/users/user_profile-7.jpg" alt="product">
+                        <div class="media-body">
+                          <div class="float-right">
+                            <div class="font-weight-600 text-muted text-small"></div>
+                            <a href="index4.html">Details</a>
+                          </div>
+                          <div class="media-title">Roger</div>
+                          <!-- <div class="mt-1">
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-primary" data-width="100%"></div>
+                              <div class="budget-price-label">8,23h</div>
+                            </div>
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-danger" data-width="80%"></div>
+                              <div class="budget-price-label">6</div>
+                            </div>
+                          </div> -->
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="mr-3 rounded" width="55" src="assets/img/users/user_profile-6.jpg" alt="product">
+                        <div class="media-body">
+                          <div class="float-right">
+                            <div class="font-weight-600 text-muted text-small"></div>
+                            <a href="index4.html">Details</a>
+                          </div>
+                          <div class="media-title">Blait</div>
+                          <!-- <div class="mt-1">
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-primary" data-width="91%"></div>
+                              <div class="budget-price-label">7,28h</div>
+                            </div>
+                            <div class="budget-price">
+                              <div class="budget-price-square bg-danger" data-width="74%"></div>
+                              <div class="budget-price-label">5</div>
+                            </div>
+                          </div> -->
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer pt-3 d-flex justify-content-center">
+                    <div class="budget-price justify-content-center">
+                      <div class="budget-price-square bg-primary" data-width="20"></div>
+                      <div class="budget-price-label">Aver. Hours Worked/day</div>
+                    </div>
+                    <div class="budget-price justify-content-center">
+                      <div class="budget-price-square bg-danger" data-width="20"></div>
+                      <div class="budget-price-label">Aver. Job Report/day</div>
                     </div>
                   </div>
-                  <div class="mt-1">
+                </div>
+              </div>
+
+
+
+
+
+               <!-- <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+                <div class="card" style="height: 350px">
+                  <div class="card-header">
+                    <h4>Thechnician Dashboard</h4>
+                    <!- <div class="card-header-action">
+                      <a href="orders.html" class="btn btn-primary">View All</a>
+                    </div> ->
+                  </div>
+                  <div class="card-body">
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">267</div>
+                      <div class="font-weight-bold">Internet</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">175</div>
+                      <div class="font-weight-bold">TV</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="67%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">98</div>
+                      <div class="font-weight-bold">Repair</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-yellow" role="progressbar" data-width="36%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">56</div>
+                      <div class="font-weight-bold">Speed Test</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-yellow" role="progressbar" data-width="28%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">34</div>
+                      <div class="font-weight-bold">Fusion</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-red" role="progressbar" data-width="20%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>  -->
+
+              <!-- <div class="col-12 col-md-12 col-lg-3" style="display: none;">
+                <div class="card" style="min-height: 350px">
+                  <div class="card-header">
+                    <h4>Line Chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="area_chart" class="graph"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-3">
+                <div class="card" style="height: 350px">
+                  <!- <div class="card-header">
+                    <h4>Bar Chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="donut_chart" class="graph"></div>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+                <div class="card" style="height: 350px">
+                  <div class="card-header">
+                    <h4>Pending Approval</h4>
+                    <div class="card-header-action">
+                      <a href="orders.html" class="btn btn-primary">View All</a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">8 Days</div>
+                      <div class="font-weight-bold">2356 - Roger</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-red" role="progressbar" data-width="100%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">7 Days</div>
+                      <div class="font-weight-bold">2388 - Justin</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-red" role="progressbar" data-width="80%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">7 Days</div>
+                      <div class="font-weight-bold">2374 - James</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-red" role="progressbar" data-width="80%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">5 Days</div>
+                      <div class="font-weight-bold">2365 - Ian</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-danger" role="progressbar" data-width="60%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">2 Days</div>
+                      <div class="font-weight-bold">2358 - Jhosh</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="10%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <!-- <div class="m-b-20">
+                    <div class="buttons">
+                      <a href="#" data-toggle="tooltip" title data-original-title="Open" class="btn btn-icon btn-info"><i
+                          class="fas fa-eye"></i></a>
+                      <!-- <a href="#" data-toggle="tooltip" title data-original-title="Edit" class="btn btn-icon btn-light"><i
+                          class="far fa-edit"></i></a>
+                    </div>
+                  </div> -->
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+                <div class="card" style="height: 350px">
+                  <div class="card-header">
+                    <h4>Average Hours</h4>
+                    <div class="card-header-action">
+                      <a href="orders.html" class="btn btn-primary">View All</a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">3h</div>
+                      <div class="font-weight-bold">Robert</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-danger" role="progressbar" data-width="35%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">5h</div>
+                      <div class="font-weight-bold">Ben</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-danger" role="progressbar" data-width="55%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">11h</div>
+                      <div class="font-weight-bold">Ryan</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-danger" role="progressbar" data-width="100%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">7h</div>
+                      <div class="font-weight-bold">Ian</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-yellow" role="progressbar" data-width="80%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted">8h</div>
+                      <div class="font-weight-bold">Justin</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="100%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+                <div class="card" style="height: 350px">
+                  <div class="card-header">
+                    <h4>Products in Warehouse</h4>
+                    <div class="card-header-action">
+                      <a href="product.html" class="btn btn-primary">View All</a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted"><span style="color: red">20</span>/40</div>
+                      <div class="font-weight-bold">Router</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted"><span style="color: red">20</span>/20</div>
+                      <div class="font-weight-bold">Modem</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted"><span style="color: orange">50</span>/20</div>
+                      <div class="font-weight-bold">Drop</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-yellow" role="progressbar" data-width="67%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted"><span style="color: green">100</span>/50</div>
+                      <div class="font-weight-bold">Cable</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="70%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="m-b-20">
+                      <div class="text-small float-right font-weight-bold text-muted"><span style="color: green">100</span>/20</div>
+                      <div class="font-weight-bold">TV</div>
+                      <div class="progress" data-height="5">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>(Average??)Payments and Job Reports Last 3 Months</h4>
+                  </div>
+                  <div class="card-body">
                     <div class="recent-report__chart">
-                      <div id="chart2"></div>
+                      <div id="chart5_custom"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Task Details</h4>
+
+
+
+
+            <!-- Abandonados da primeira reuniao com james -->
+            <!-- <div class="row">
+              <div class="col-12 col-md-12 col-lg-12" style="display: none;">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Line Chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="line_chart" class="graph"></div>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <tr>
-                        <th class="text-center">
-                          <div class="custom-checkbox custom-checkbox-table custom-control">
-                            <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                              class="custom-control-input" id="checkbox-all">
-                            <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                          </div>
-                        </th>
-                        <th>Task Name</th>
-                        <th>Progress</th>
-                        <th>Due Date</th>
-                        <th>Action</th>
-                      </tr>
-                      <tr>
-                        <td class="p-0 text-center">
-                          <div class="custom-checkbox custom-control">
-                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                              id="checkbox-1">
-                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                          </div>
-                        </td>
-                        <td>Ecommerce website</td>
-                        <td class="align-middle">
-                          <div class="progress" data-height="4" data-toggle="tooltip" title="100%">
-                            <div class="progress-bar bg-success" data-width="100"></div>
-                          </div>
-                        </td>
-                        <td>2018-01-20</td>
-                        <td>
-                          <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                              class="fas fa-pencil-alt"></i></a>
-                          <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete"
-                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                            data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-0 text-center">
-                          <div class="custom-checkbox custom-control">
-                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                              id="checkbox-4">
-                            <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
-                          </div>
-                        </td>
-                        <td>Android App</td>
-                        <td class="align-middle">
-                          <div class="progress" data-height="4" data-toggle="tooltip" title="30%">
-                            <div class="progress-bar bg-orange" data-width="30"></div>
-                          </div>
-                        </td>
-                        <td>2018-09-11</td>
-                        <td>
-                          <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                              class="fas fa-pencil-alt"></i></a>
-                          <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete"
-                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                            data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-0 text-center">
-                          <div class="custom-checkbox custom-control">
-                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                              id="checkbox-5">
-                            <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
-                          </div>
-                        </td>
-                        <td>Logo Design</td>
-                        <td class="align-middle">
-                          <div class="progress" data-height="4" data-toggle="tooltip" title="67%">
-                            <div class="progress-bar bg-purple" data-width="67"></div>
-                          </div>
-                        </td>
-                        <td>2018-04-12</td>
-                        <td>
-                          <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                              class="fas fa-pencil-alt"></i></a>
-                          <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete"
-                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                            data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-0 text-center">
-                          <div class="custom-checkbox custom-control">
-                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                              id="checkbox-6">
-                            <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
-                          </div>
-                        </td>
-                        <td>Java Project</td>
-                        <td class="align-middle">
-                          <div class="progress" data-height="4" data-toggle="tooltip" title="43%">
-                            <div class="progress-bar bg-success" data-width="43"></div>
-                          </div>
-                        </td>
-                        <td>2018-01-20</td>
-                        <td>
-                          <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                              class="fas fa-pencil-alt"></i></a>
-                          <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete"
-                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                            data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-0 text-center">
-                          <div class="custom-checkbox custom-control">
-                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                              id="checkbox-4">
-                            <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
-                          </div>
-                        </td>
-                        <td>Android App</td>
-                        <td class="align-middle">
-                          <div class="progress" data-height="4" data-toggle="tooltip" title="30%">
-                            <div class="progress-bar bg-orange" data-width="30"></div>
-                          </div>
-                        </td>
-                        <td>2018-09-11</td>
-                        <td>
-                          <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                              class="fas fa-pencil-alt"></i></a>
-                          <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete"
-                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                            data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
-                        </td>
-                      </tr>
-                    </table>
+              </div>
+              <div class="col-12 col-md-12 col-lg-12" style="display: none;">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Hours worked 3 last months</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="bar_chart" class="graph"></div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="row clearfix"  style="display: none;">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Bar CHart With Line</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="echart_bar_line" class="chartsh chart-shadow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Line Chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="echart_line" class="chartsh chart-shadow"></div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="row clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12"  style="display: none;">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Bar Chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="echart_bar" class="chartsh chart-shadow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Hours worked 3 last months</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="echart_graph_line" class="chartsh chart-shadow2"></div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="row">
+              <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Hours Job last month</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="recent-report__chart">
+                      <div id="chartHoursJobTech"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!--
+            2° Linha
+          -->
+            <div class="row">
+
+              <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Average Points And Hours Total Jobs - Month </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="recent-report__chart">
+                      <div id="chart5_PointsTimeJob"></div>
+                      <!-- <div id="chart3AverageScoreTimeJob"></div>  -->
+                      <!-- <div id="chart3"></div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
         <div class="settingSidebar">
@@ -999,10 +947,12 @@
             </div>
           </div>
         </div>
+
+
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2019 <div class="bullet"></div> Design By <a href="#">Redstar</a>
+          Copyright &copy; 2020 <div class="bullet"></div> Design By <a href="#">Simplify</a>
         </div>
         <div class="footer-right">
         </div>
@@ -1013,13 +963,22 @@
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
   <script src="assets/bundles/chartjs/chart.min.js"></script>
+  <script src="assets/js/page/chart-apexcharts.js"></script>
   <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
+  <script src="assets/bundles/morris/morris.min.js"></script>
+  <script src="assets/bundles/morris/raphael-min.js"></script>
+  <script src="assets/bundles/echart/echarts.js"></script>
   <!-- Page Specific JS File -->
-  <script src="assets/js/page/index.js"></script>
+  <script src="assets/js/page/chart-echarts.js"></script>
+  <script src="assets/js/page/chart-morris.js"></script>
+  <script src="assets/js/page/index2.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/page/widget-chart.js"></script>
+
 </body>
 
 </html>

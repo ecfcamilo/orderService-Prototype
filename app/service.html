@@ -197,18 +197,29 @@
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand py-3 d-block" style="height: auto !important;">
             <a href="index4.html">
-              <img alt="image" src="assets\img\simplify.png" height="100" width="100" />
+              <img alt="image" src="assets\img\pnl.png" height="50" width="100" />
             </a>
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
             <li class="active">
+              <a href="index3.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard Manager</span></a>
+            </li>
+            <li class="active">
               <a href="index4.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
             </li>
 
             <li class="">
-              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Order Service</span></a>
+              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
             </li>
+
+            <li class="">
+              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Services</span></a>
+            </li>
+
+            <!-- <li class="">
+              <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Products</span></a>
+            </li> -->
 
             <!--
             <li class="">
@@ -216,19 +227,19 @@
             </li>
             -->
 
-            
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-level-down-alt"></i><span>Warehouse</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
               <ul class="dropdown-menu">
-                <li><a href="product.html">Product</a></li>
-                <li><a href="service.html">Service</a></li>
+                <li><a href="trucks.html">Trucks</a></li>
+                <li><a href="transfer.html">Movements</a></li>
+                <li><a href="product.html">Products</a></li>
               </ul>
             </li>
 
-          </ul>
+            <li class="">
+              <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
             </li>
-          </ul>
-            </li>
+
           </ul>
         </aside>
       </div>
@@ -260,14 +271,15 @@
                         <thead>
                           <tr>
                             <th class="text-center">
-
                             </th>
-
-                            <!-- <th>Date</th> -->
-                            <!-- <th>Tech ID - Name</th> -->
+                            <th>Code</th>
+                            <th>Category</th>
                             <th>Service</th>
-                            <th>Estimate Pay</th>
-                            <!-- <th>Status</th> -->
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Points</th>
+                            <th>Time(Minutes)</th>
+                            <th>Status</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -279,12 +291,14 @@
                             <td>
                               1
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet installation
-                            </td>
-                            <td>$ 40,00</td>
-                            
+                            <td>45678</td>
+                            <td>Communication</td>
+                            <td>SMTHM</td>
+                            <td>Smart Home Automation</td>
+                            <td>$ 0,00</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td>
                               <div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -302,12 +316,14 @@
                             <td>
                               2
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet Repair
-                            </td>
-                            <td>$ 40,00</td>
-                            
+                            <td>55678</td>
+                            <td>Communication</td>
+                            <td>VID</td>
+                            <td>Video</td>
+                            <td>$ 20,13</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td>
                               <div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -325,11 +341,14 @@
                             <td>
                               3
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Telephone Installation
-                            </td>
-                            <td>$ 40,00</td>
+                            <td>84529</td>
+                            <td>Communication</td>
+                            <td>INT</td>
+                            <td>Internet</td>
+                            <td>$ 20,13</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td>
                               <div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -347,12 +366,14 @@
                             <td>
                               4
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet Repair
-                            </td>
-                            <td>$ 25,00</td>
-                            
+                            <td>16328</td>
+                            <td>Communication</td>
+                            <td>TEL</td>
+                            <td>Telephone</td>
+                            <td>$ 23,43</td>
+                            <td>70</td>
+                            <td>70</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td><div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
@@ -368,12 +389,14 @@
                             <td>
                               5
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Telephone Installation
-                            </td>
-                            <td>$ 30,00</td>
-                            
+                            <td>78469</td>
+                            <td>Communication</td>
+                            <td>VT</td>
+                            <td>Video/Telephone</td>
+                            <td>$ 32,01</td>
+                            <td>95</td>
+                            <td>95</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td><div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
@@ -389,12 +412,15 @@
                             <td>
                               6
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Telephone Installation
+                            <td>63195</td>
+                            <td>Communication</td>
+                            <td>IV</td>
+                            <td>Internet/Video
                             </td>
-                            <td>$ 40,00</td>
-                            
+                            <td>$ 34,45</td>
+                            <td>105</td>
+                            <td>105</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td><div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
@@ -410,12 +436,14 @@
                             <td>
                               7
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>TV Installation
-                            </td>
-                            <td>$ 30,00</td>
-                            
+                            <td>96452</td>
+                            <td>Communication</td>
+                            <td>TP</td>
+                            <td>Triple Play</td>
+                            <td>$ 46,31</td>
+                            <td>145</td>
+                            <td>145</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td><div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
@@ -431,12 +459,14 @@
                             <td>
                               8
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>TV Installation
-                            </td>
-                            <td>$ 40,00</td>
-                            
+                            <td>31695</td>
+                            <td>Communication</td>
+                            <td>STB</td>
+                            <td>Additional Set Top Box (excl the first box installed)</td>
+                            <td>$ 4,5</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td><div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
@@ -452,74 +482,14 @@
                             <td>
                               9
                             </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet installation
-                            </td>
-                            <td>$ 15,00</td>
-                            
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              10
-                            </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet installation
-                            </td>
-                            <td>$ 40,00</td>
-                            
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              11
-                            </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet installation
-                            </td>
-                            <td>$ 30,00</td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              12
-                            </td>
-                            <!-- <td>2020-05-07</td> -->
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Internet installation
-                            </td>
-                            <td>$ 40,00</td>
-                            
+                            <td>54786</td>
+                            <td>Security</td>
+                            <td>BRNZ</td>
+                            <td>Residential Bronze Security Package</td>
+                            <td>$ 0,00</td>
+                            <td>000</td>
+                            <td>000</td>
+                            <td><div class="badge badge-danger badge-shadow">Inactive</div></td>
                             <td><div class="dropdown d-inline">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
@@ -674,7 +644,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2019 <div class="bullet"></div> Design By <a href="#">Redstar</a>
+          Copyright &copy; 2020 <div class="bullet"></div> Design By <a href="#">Simplify</a>
         </div>
         <div class="footer-right">
         </div>

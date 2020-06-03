@@ -233,7 +233,7 @@ $(function (e) {
             trigger: "axis"
         },
         legend: {
-            data: ["sales", "purchases"]
+            data: ["Internet", "Tv"]
         },
         toolbox: {
             show: !1
@@ -241,15 +241,15 @@ $(function (e) {
         calculable: !1,
         xAxis: [{
             type: "category",
-            data: ["2000", "2001", "2002", "2003", "2004", "2005"]
+            data: ["Justin", "Ian", "Ryan", "Roger", "Blait", "Robert", "Mike", "Daniel", "Jhosh", "Ben", "Wes", "Joshua", "Eddy", "James"]
         }],
         yAxis: [{
             type: "value"
         }],
         series: [{
-            name: "sales",
+            name: "Internet",
             type: "bar",
-            data: [22, 54, 37, 23, 25.6, 76],
+            data: [22, 54, 37, 23, 25.6, 76, 22, 54, 37, 23, 25.6, 76, 37, 23],
             markPoint: {
                 data: [{
                     type: "max",
@@ -266,17 +266,17 @@ $(function (e) {
                 }]
             }
         }, {
-            name: "purchases",
+            name: "Tv",
             type: "bar",
-            data: [35, 45, 47, 10, 35, 70],
+            data: [35, 45, 47, 10, 35, 70, 35, 45, 47, 10, 35, 70, 45, 47],
             markPoint: {
                 data: [{
-                    name: "sales",
+                    name: "Internet",
                     value: 182.2,
                     xAxis: 7,
                     yAxis: 183
                 }, {
-                    name: "purchases",
+                    name: "Tv",
                     value: 2.3,
                     xAxis: 11,
                     yAxis: 3

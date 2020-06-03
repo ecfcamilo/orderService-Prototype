@@ -4,6 +4,7 @@ $(function () {
     getMorris('bar', 'bar_chart');
     getMorris('area', 'area_chart');
     getMorris('donut', 'donut_chart');
+    getMorris('dash', 'dash_chart');
 });
 
 
@@ -81,34 +82,117 @@ function getMorris(type, element) {
     	 Morris.Bar({
     		    element: element,
     		    data: [{
-                    x: '2011 Q1',
-                    y: 66,
-                    z: 54,
-                    a: 38
-                }, {
-                    x: '2011 Q2',
+                    x: 'Roger',
                     y: 98,
                     z: 75,
                     a: 45
                 }, {
-                    x: '2011 Q3',
+                    x: 'James',
                     y: 73,
                     z: 52,
                     a: 44
                 }, {
-                    x: '2011 Q4',
+                    x: 'Ian',
                     y: 82,
                     z: 64,
                     a: 43
+                }, {
+                    x: 'Justin',
+                    y: 66,
+                    z: 54,
+                    a: 38
+                }, {
+                    x: 'Ryan',
+                    y: 98,
+                    z: 75,
+                    a: 45
+                }, {
+                    x: 'Blait',
+                    y: 73,
+                    z: 52,
+                    a: 44
+                }, {
+                    x: 'Robert',
+                    y: 82,
+                    z: 64,
+                    a: 43
+                }, {
+                    x: 'Mike',
+                    y: 66,
+                    z: 54,
+                    a: 38
+                }, {
+                    x: 'Daniel',
+                    y: 98,
+                    z: 75,
+                    a: 45
+                }, {
+                    x: 'Jhosh',
+                    y: 73,
+                    z: 52,
+                    a: 44
+                }, {
+                    x: 'Ben',
+                    y: 82,
+                    z: 64,
+                    a: 43
+                }, {
+                    x: 'Wes',
+                    y: 66,
+                    z: 54,
+                    a: 38
+                }, {
+                    x: 'Joshua',
+                    y: 98,
+                    z: 75,
+                    a: 45
+                }, {
+                    x: 'Eddy',
+                    y: 73,
+                    z: 52,
+                    a: 44
                 }],
                 xkey: 'x',
                 ykeys: ['y', 'z', 'a'],
-                labels: ['Y', 'Z', 'A'],
-                barColors: ['#01B8AA', '#F2C80F', '#5F6B6D'],
+                labels: ['Feb', 'Mar', 'Apr'],
+                barColors: ['#007bff', '#01B8AA', '#F2C80F'],
     		    hideHover: 'auto'
     		  });
 
-    } else if (type === 'area') {
+    } 
+//     else if (type === 'dash') {
+//         Morris.Bar({
+//                element: element,
+//                data: [{
+//                    x: '2011 Q1',
+//                    y: 66,
+//                    z: 54,
+//                    a: 38
+//                }, {
+//                    x: '2011 Q2',
+//                    y: 98,
+//                    z: 75,
+//                    a: 45
+//                }, {
+//                    x: '2011 Q3',
+//                    y: 73,
+//                    z: 52,
+//                    a: 44
+//                }, {
+//                    x: '2011 Q4',
+//                    y: 82,
+//                    z: 64,
+//                    a: 43
+//                }],
+//                xkey: 'x',
+//                ykeys: ['y', 'z', 'a'],
+//                labels: ['Y', 'Z', 'A'],
+//                barColors: ['#01B8AA', '#F2C80F', '#007bff'],
+//                hideHover: 'auto'
+//              });
+
+//    }
+   else if (type === 'area') {
         Morris.Area({
             element: element,
             data: [
@@ -136,20 +220,20 @@ function getMorris(type, element) {
         Morris.Donut({
             element: element,
             data: [{
-                label: 'Chrome',
+                label: 'Internet',
                 value: 37
             }, {
-                label: 'Firefox',
+                label: 'Tv',
                 value: 30
             }, {
-                label: 'Safari',
+                label: 'Internet Repair',
                 value: 18
             }, {
-                label: 'Opera',
+                label: 'Telephone',
                 value: 12
             },
             {
-                label: 'Other',
+                label: 'Eletric',
                 value: 3
             }],
             colors: ['rgb(255, 206, 86)', 'rgb(65, 196, 216)', 'rgb(109, 109, 109)', 'rgb(255, 99, 132)', 'rgb(75, 192, 192)'],

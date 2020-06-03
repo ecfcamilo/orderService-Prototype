@@ -196,20 +196,32 @@
       </nav>
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
-            <div class="sidebar-brand py-3 d-block" style="height: auto !important;">
+          <div class="sidebar-brand py-3 d-block" style="height: auto !important;">
             <a href="index4.html">
-              <img alt="image" src="assets\img\simplify.png" height="100" width="100"  />
-                         </a>
+              <img alt="image" src="assets\img\pnl.png" height="50" width="100" />
+            </a>
           </div>
+
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
+            <li class="active">
+              <a href="index3.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard Manager</span></a>
+            </li>
             <li class="active">
               <a href="index4.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
             </li>
 
             <li class="">
-              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Order Service</span></a>
+              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
             </li>
+
+            <li class="">
+              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Services</span></a>
+            </li>
+
+            <!-- <li class="">
+              <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Products</span></a>
+            </li> -->
 
             <!--
             <li class="">
@@ -217,16 +229,21 @@
             </li>
             -->
 
-            
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-level-down-alt"></i><span>Warehouse</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
               <ul class="dropdown-menu">
-                <li><a href="product.html">Product</a></li>
-                <li><a href="service.html">Service</a></li>
+                <li><a href="trucks.html">Trucks</a></li>
+                <li><a href="transfer.html">Movements</a></li>
+                <li><a href="product.html">Products</a></li>
               </ul>
             </li>
 
+            <li class="">
+              <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
+            </li>
+
           </ul>
+
         </aside>
       </div>
       <!-- Main Content -->
@@ -244,12 +261,12 @@
                     <div class="text-right">
                       <h3 class="font-light mb-0">
                         <i class="ti-arrow-up text-success"></i> 80
-														
+
                       </h3>
-                      <span class="text-muted">Order Service</span>
+                      <span class="text-muted">Job Report</span>
                     </div>
                     <p class="mb-3 text-muted pull-left text-sm">
-                     <!-- <a href="#" class="btn btn-icon btn-lg btn-success"><i class="fas fa-check"></i></a> 
+                      <!-- <a href="#" class="btn btn-icon btn-lg btn-success"><i class="fas fa-check"></i></a> 
                       <span class="text-nowrap">Input Order</span>-->
                     </p>
                   </div>
@@ -265,10 +282,10 @@
                       <h3 class="font-light mb-0">
                         <i class="ti-arrow-up text-success"></i> $200
                       </h3>
-                      <span class="text-muted">Average Day</span>
+                      <span class="text-muted">Average Hour</span>
                     </div>
                     <p class="mb-3 text-muted pull-left text-sm">
-                      
+
                     </p>
                   </div>
                 </div>
@@ -307,26 +324,111 @@
               </div>
             </div>
           </div>
-          
-            
-            <div class="row">
-            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+
+
+          <div class="row">
+            <div class="col-lg-9 col-md-12 col-12 col-sm-12">
               <div class="card">
-                  <div class="card-header">
-                    <h4>Jobs last 6 months</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="recent-report__chart">
-                      <div id="chart2"></div>
-                    </div>
+                <div class="card-header">
+                  <h4>Payments And Job Reports Last 6 Months</h4>
+                </div>
+                <div class="card-body">
+                  <div class="recent-report__chart">
+                    <div id="chart5_custom_Tech"></div>
                   </div>
                 </div>
               </div>
-              
-              <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+            </div>            
+
+
+            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+              <div class="card" style="min-height: 455px">
+                <div class="card-header">
+                  <h4>Products in Warehouse</h4>
+                  <div class="card-header-action">
+                    <a href="product.html" class="btn btn-primary">View All</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="m-b-20">
+                    <div class="text-small float-right font-weight-bold text-muted">2 | Min: 4</div>
+                    <div class="font-weight-bold">Router</div>
+                    <div class="progress" data-height="5">
+                      <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="m-b-20">
+                    <div class="text-small float-right font-weight-bold text-muted">2 | Min: 2</div>
+                    <div class="font-weight-bold">Modem</div>
+                    <div class="progress" data-height="5">
+                      <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="m-b-20">
+                    <div class="text-small float-right font-weight-bold text-muted">5 | Min: 2</div>
+                    <div class="font-weight-bold">Drop</div>
+                    <div class="progress" data-height="5">
+                      <div class="progress-bar l-bg-yellow" role="progressbar" data-width="67%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="m-b-20">
+                    <div class="text-small float-right font-weight-bold text-muted">10 | Min: 5</div>
+                    <div class="font-weight-bold">Cable</div>
+                    <div class="progress" data-height="5">
+                      <div class="progress-bar l-bg-green" role="progressbar" data-width="70%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="m-b-20">
+                    <div class="text-small float-right font-weight-bold text-muted">10 | Min: 2</div>
+                    <div class="font-weight-bold">TV</div>
+                    <div class="progress" data-height="5">
+                      <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="m-b-20">
+                    <div class="text-small float-right font-weight-bold text-muted">30 | Min: 1</div>
+                    <div class="font-weight-bold">Fusion</div>
+                    <div class="progress" data-height="5">
+                      <div class="progress-bar l-bg-green" role="progressbar" data-width="90%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-9 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Points And Time Jobs - Days of Last Week </h4>
+                </div>
+                <div class="card-body">
+                  <div class="recent-report__chart">
+                    <!-- <div id="chart3AverageScoreTimeJob_Tech"></div> -->
+                    <!-- <div id="chartAverageScoreTimeJob_Tech"></div> -->
+                    <div id="chart5_PointsTimeJob_Tech"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
               <div class="card" style="min-height: 455px">
                 <div class="card-header">
                   <h4>Top Jobs</h4>
+                  <div class="card-header-action">
+                    <a href="orders.html" class="btn btn-primary">View All</a>
+                  </div>
                 </div>
                 <div class="card-body">
                   <div class="m-b-20">
@@ -377,75 +479,12 @@
                         aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                    
-          </div>
-           </div>
-            </div>
 
-
-            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
-                <div class="card" style="min-height: 455px">
-                  <div class="card-header">
-                    <h4>Products in Warehouse</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="m-b-20">
-                      <div class="text-small float-right font-weight-bold text-muted">2 | Min: 4</div>
-                      <div class="font-weight-bold">Router</div>
-                      <div class="progress" data-height="5">
-                        <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="m-b-20">
-                      <div class="text-small float-right font-weight-bold text-muted">2 | Min: 2</div>
-                      <div class="font-weight-bold">Modem</div>
-                      <div class="progress" data-height="5">
-                        <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="m-b-20">
-                      <div class="text-small float-right font-weight-bold text-muted">5 | Min: 2</div>
-                      <div class="font-weight-bold">Drop</div>
-                      <div class="progress" data-height="5">
-                        <div class="progress-bar l-bg-yellow" role="progressbar" data-width="67%" aria-valuenow="25"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="m-b-20">
-                      <div class="text-small float-right font-weight-bold text-muted">10 | Min: 5</div>
-                      <div class="font-weight-bold">Cable</div>
-                      <div class="progress" data-height="5">
-                        <div class="progress-bar l-bg-green" role="progressbar" data-width="70%" aria-valuenow="25"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="m-b-20">
-                      <div class="text-small float-right font-weight-bold text-muted">10 | Min: 2</div>
-                      <div class="font-weight-bold">TV</div>
-                      <div class="progress" data-height="5">
-                        <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="25"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="m-b-20">
-                      <div class="text-small float-right font-weight-bold text-muted">30 | Min: 1</div>
-                      <div class="font-weight-bold">Fusion</div>
-                      <div class="progress" data-height="5">
-                        <div class="progress-bar l-bg-green" role="progressbar" data-width="90%" aria-valuenow="25"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                      
-            </div>
-             </div>
+                </div>
               </div>
-
-              
-              
+            </div>
           </div>
-          
+
         </section>
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -559,7 +598,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2019 <div class="bullet"></div> Design By <a href="#">Redstar</a>
+          Copyright &copy; 2020 <div class="bullet"></div> Design By <a href="#">Simplify</a>
         </div>
         <div class="footer-right">
         </div>
@@ -570,7 +609,7 @@
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
   <script src="assets/bundles/chartjs/chart.min.js"></script>
-   <script src="assets/js/page/chart-apexcharts.js"></script>
+  <script src="assets/js/page/chart-apexcharts.js"></script>
   <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
   <script src="assets/bundles/summernote/summernote-bs4.js"></script>
   <!-- Page Specific JS File -->
@@ -580,7 +619,7 @@
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/page/widget-chart.js"></script>
-  
+
 </body>
 
 </html>

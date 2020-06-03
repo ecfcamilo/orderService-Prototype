@@ -5,21 +5,14 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>Ality - Admin Dashboard Template</title>
-
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
     <!-- <link rel="stylesheet" href="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"> -->
-    <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
-    <link rel="stylesheet" href="assets/bundles/bootstrap-daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" href="assets/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
-    <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
-
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/components.css">
-
     <!-- Custom style CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
@@ -53,7 +46,7 @@
                             <div class="dropdown-list-content dropdown-list-message">
                                 <a href="#" class="dropdown-item">
                                     <span class="dropdown-item-avatar text-white">
-                                        <img alt="image" src="assets/img/users/jr.jpg" class="rounded-circle">
+                                        <img alt="image" src="assets/img/jr.jpg" class="rounded-circle">
                                     </span>
                                     <span class="dropdown-item-desc">
                                         <span class="message-user">John Deo</span>
@@ -210,6 +203,7 @@
                             <img alt="image" src="assets\img\pnl.png" height="50" width="100" />
                         </a>
                     </div>
+
                     <ul class="sidebar-menu">
                         <li class="menu-header">Menu</li>
                         <li class="active">
@@ -229,6 +223,16 @@
                                     class="fas fa-user-tie"></i><span>Services</span></a>
                         </li>
 
+                        <!-- <li class="">
+                          <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Products</span></a>
+                        </li> -->
+
+                        <!--
+                        <li class="">
+                          <a href="warehouse.html" class="nav-link"><i class="fas fa-archive"></i><span>Warehouse</span></a>
+                        </li>
+                        -->
+
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown"><i
                                     class="fas fa-warehouse"></i><span>Warehouse</span></a>
@@ -245,13 +249,14 @@
                         </li>
 
                     </ul>
+
                 </aside>
             </div>
             <!-- Main Content -->
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>New Job Report</h1>
+                        <h1>Transfer Product</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                             <div class="breadcrumb-item"><a href="#">Job Report</a></div>
@@ -268,317 +273,271 @@
                                     </div> -->
                                     <div class="card-body">
                                         <form id="wizard_with_validation" method="POST">
-                                            <h3>Initial</h3>
+                                            <h3>Warehouse</h3>
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="col-12 col-md-12 col-lg-2">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label>Technician*</label>
-                                                                <input type="text" class="form-control" value="Justin"
-                                                                    readonly>
-                                                                <!-- <select class="form-control">
-                                                                    <option>Peter</option>
-                                                                </select> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-2">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label class="form-label"><b>Code Job*</b></label>
-                                                                <input type="number" class="form-control"
-                                                                    name="username">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-2">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label><b>Job Status*</b></label>
-                                                                <select class="form-control" id="job_status">
-                                                                    <option value="completed">Completed</option>
-                                                                    <option value="cancelled">Cancelled</option>
-                                                                    <option value="reschedule">Reschedule</option>
-                                                                    <option value="hold ">Hold</option>
+                                                                <label>Type*</label>
+                                                                <select class="form-control" id="type_transfer">
+                                                                    <option value="provision">Provision</option>
+                                                                    <option value="devolution">Devolution</option>
+                                                                    <option value="transfer_between_tech">Transfer
+                                                                        Between Technician</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-12 col-lg-2" style="display: none"
-                                                        id="reason_job">
+
+                                                    <div class="col-12 col-md-12 col-lg-2" id="reason_transfer"
+                                                        style="display: none">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label><b>Reason*</b></label>
+                                                                <label>Reason*</label>
                                                                 <select class="form-control">
-                                                                    <option>Defect</option>
-                                                                    <option>Problem</option>
-                                                                    <option>Time</option>
+                                                                    <option value="defect">Defect</option>
+                                                                    <option value="excess">Excess</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="row">
-                                                    <div class="col-12 col-md-12 col-lg-2">
+                                                    <div class="col-12 col-md-12 col-lg-2" name="wh_destiny"
+                                                        id="wh_destiny" style="display: none">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label>Date*</label>
-                                                                <!-- <input type="date" class="form-control" name="date" > -->
-                                                                <input type="text" class="form-control datepicker">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-2">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label><b>Start*</b></label>
-                                                                <div class="input-group">
-                                                                    <div class="input-group-prepend">
-                                                                        <div class="input-group-text">
-                                                                            <i class="fas fa-clock"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <input type="text" class="form-control timepicker">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-2">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label><b>Finish*</b></label>
-                                                                <div class="input-group">
-                                                                    <div class="input-group-prepend">
-                                                                        <div class="input-group-text">
-                                                                            <i class="fas fa-clock"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <input type="text" class="form-control timepicker">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label>Total</label>
-                                                                <input type="text" class="form-control" name="total"
-                                                                    readonly="readonly">
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
-                                                </div>
-
-                                            </fieldset>
-                                            <h3>Service</h3>
-                                            <fieldset>
-                                                <div class="row">
-                                                    <div class="col-12 col-md-12 col-lg-4">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label><b>Service</b></label>
-                                                                <div class="input-group">
-                                                                    <select class="custom-select"
-                                                                        id="inputGroupSelect05">
-                                                                        <option>SMTHM - Smart Home Automation</option>
-                                                                        <option>VID - Video</option>
-                                                                        <option>INT - Internet</option>
-                                                                        <option>TEL - Telephone</option>
-                                                                        <option>VT - Video/Telephone</option>
-                                                                        <option>IV - Internet/Video</option>
-                                                                        <option>IT - Internet/Telephone</option>
-                                                                        <option>TP - Triple Play</option>
-                                                                        <option>STB - Additional Set Top Box (excl the
-                                                                            first box installed)</option>
-                                                                        <option>ERO - Eero (1 per Eero Installation,
-                                                                            includes all beacons)</option>
-                                                                        <option>VIDS - Video/SH</option>
-                                                                        <option>INTS - Internet/SH</option>
-                                                                        <option>TELS - Telephone/SH</option>
-                                                                        <option>VTS - Video/Telephone/SH</option>
-                                                                        <option>IVS - Internet/Video/SH </option>
-                                                                        <option>ITS - Internet/Telephone/SH</option>
-                                                                        <option>TPS - Triple Play/SH</option>
-                                                                        <option>SSEC - Smart Security / Smart Security +</option>
-                                                                        <option>BRNZ - Residential Bronze Security
-                                                                            Package</option>
-                                                                        <option>SIL - Residential Silver Security &
-                                                                            Automation Package</option>
-                                                                        <option>GOLD - Residential Gold Security &
-                                                                            Automation Package</option>
-                                                                        <option>R - Residential Upgrade/Repair</option>
-                                                                        <option>BUSBRNZ - Commercial Bronze Security
-                                                                            Package</option>
-                                                                        <option>BUSSIL - Commercial Silver Security &
-                                                                            Automation Package</option>
-                                                                        <option>BUSGOLD - Commercial Gold Security &
-                                                                            Automation Package</option>
-                                                                        <option>BUSR - Commercial Upgrade/Repair</option>
-                                                                        <option>OCAM - Outdoor Camera</option>
-                                                                        <option>THER - Thermostat</option>
-                                                                        <option>SDEV - "Additional ""Standard Device""
-                                                                            incl I/D Camera, Doorbell, Deadbolt, Garage
-                                                                            Door Opener, Flood Detection, Smoke
-                                                                            Detector" </option>
-                                                                        <option>SHPNL - Smarthome Panel</option>
-                                                                        <option>SWAP - Swap The Equipament </option>
-                                                                        <option>REL - Relocate, Rewire, Complicated Drop</option>
-                                                                        <option>DISC - Disconnect</option>
-                                                                        <option>TPIA - TPIA Installation  </option>
-                                                                        <option>TPIAT - TPIA Trouble Call</option>
-                                                                        <option>RG6 - RG6 Drop Replacement</option>
-                                                                        <option>RG11 - RG11 Drop Replacement</option>
-                                                                        <option>SC1 - For Complex Jobs</option>
-                                                                    </select>
-                                                                    <!-- <input type="text" class="form-control" readonly> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label>Service</label>
+                                                                <label>Warehouse Destiny*</label>
                                                                 <select class="form-control">
-                                                                    <option>AIV</option>
-                                                                    <option>TP</option>
-                                                                    <option>ETC1</option>
-                                                                    <option>ETC2</option>
+                                                                    <option></option>
+                                                                    <option>Truck -789 | Jhon</option>
+                                                                    <option>Truck -529 | james</option>
+                                                                    <option>Truck -256 | Justin</option>
+                                                                    <option>Truck -126 | Ian</option>
                                                                 </select>
                                                             </div>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label class="form-label">Price*</label>
-                                                                <input type="text" class="form-control" name="" value="$ 32,01"
-                                                                    readonly>
-                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label class="form-label"><b>Quantity*</b></label>
-                                                                <input type="number" class="form-control"
-                                                                    name="username" value="1">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <label>&nbsp;</label>
-                                                                <br>
-                                                                <a href="#" class="btn btn-icon btn-success"><i
-                                                                        class="fas fa-plus"></i></a>
-                                                                <!-- <input type="button" class="form-control btn btn-icon btn-success" name="username" value="Add"> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="card-header" style="margin-bottom: 10px">
-                                                        <h4>Launched Services</h4>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-4">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <input type="text" class="form-control" name="username"
-                                                                    value="Internet" readonly>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <input type="text" class="form-control" name="username"
-                                                                    value="$ 20,13" readonly>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <input type="text" class="form-control" name="username"
-                                                                    value="1" readonly>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <a class="dropdown-item has-icon" href="#"><i
-                                                                        class="fas fa-trash-alt"></i></a>
-                                                                <!-- <input type="button" class="form-control btn btn-icon btn-danger" name="username" value="Delete"> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    <div class="card-body">
 
-                                                <div class="row">
-                                                    <div class="col-12 col-md-12 col-lg-4">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <input type="text" class="form-control" name="username"
-                                                                    value="RG6 Drop Replacement" readonly>
-                                                            </div>
+                                                        <!--
+                                                        <div class="table-responsive" style="margin-top: 10px">
+                                                          <table class="table table-striped" id="table-1">
+                                    
+                                    
+                                                            <thead>
+                                                              <tr>
+                                                                <th class="text-center">
+                                                                </th>
+                                                                <th>Product</th>
+                                                                <th>Balance</th>
+                                                                <th>Balance Minimum</th>
+                                                                <th>Mark</th>
+                                                                <th>Quantity</th>
+                                                              </tr>
+                                                            </thead>
+                                    
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>
+                                                                  1
+                                                                </td>
+                                    
+                                                                <td>Modem
+                                                                </td>
+                                                                <td>10</td>
+                                                                <td>
+                                                                  2
+                                                                </td>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                        <label class="custom-control-label" for="customCheck1">Send</label>
+                                                                      </div>
+                                                                </td>
+                                                                <td width="100">
+                                                                    <input type="text" class="form-control" name="txpreco" id="txpreco">
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                  2
+                                                                </td>
+                                    
+                                                                <td>TV
+                                                                </td>
+                                                                <td>10</td>
+                                                                <td>
+                                                                  2
+                                                                </td>
+                                                                <td>
+                                                                  <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                        <label class="custom-control-label" for="customCheck1">Send</label>
+                                                                      </div>
+                                                                </td>
+                                                                <td width="100">
+                                                                    <input type="text" class="form-control" name="txpreco" id="txpreco">
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                  3
+                                                                </td>
+                                    
+                                                                <td>Cable
+                                                                </td>
+                                                                <td>10</td>
+                                                                <td>
+                                                                  2
+                                                                </td>
+                                                                <td>
+                                                                  <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                        <label class="custom-control-label" for="customCheck1">Send</label>
+                                                                      </div>
+                                                                </td>
+                                                                <td width="100">
+                                                                    <input type="text" class="form-control" name="txpreco" id="txpreco">
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                  4
+                                                                </td>
+                                    
+                                                                <td>Router
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                  2
+                                                                </td>
+                                                                <td>
+                                                                  <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                        <label class="custom-control-label" for="customCheck1">Send</label>
+                                                                      </div>
+                                                                </td>
+                                                                <td width="100">
+                                                                    <input type="text" class="form-control" name="txpreco" id="txpreco">
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                  5
+                                                                </td>
+                                    
+                                                                <td>Drop
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>
+                                                                  2
+                                                                </td>
+                                                                <td>
+                                                                  <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                        <label class="custom-control-label" for="customCheck1">Send</label>
+                                                                      </div>
+                                                                </td>
+                                                                <td width="100">
+                                                                    <input type="text" class="form-control" name="txpreco" id="txpreco">
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <input type="text" class="form-control" name="username"
-                                                                    value="$ 18,30" readonly>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <input type="text" class="form-control" name="username"
-                                                                    value="1" readonly>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 col-lg-1">
-                                                        <div class="form-group form-float">
-                                                            <div class="form-line">
-                                                                <a class="dropdown-item has-icon" href="#"><i
-                                                                        class="fas fa-trash-alt"></i></a>
-                                                                <!-- <input type="button" class="form-control btn btn-icon btn-danger" name="username" value="Delete"> -->
-                                                            </div>
-                                                        </div>
+                                                        -->
+
                                                     </div>
                                                 </div>
                                             </fieldset>
                                             <h3>Products - Finish</h3>
                                             <fieldset>
                                                 <div class="row">
-                                                    <div class="col-12 col-md-12 col-lg-4">
+                                                    <div class="col-12 col-md-12 col-lg-3">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label>Product</label>
-                                                                <select class="form-control">
-                                                                    <option></option>
-                                                                    <option>Modem - Internet</option>
-                                                                    <option>Modem Eero - Internet</option>
-                                                                    <option>Eero Beacon - Internet</option>
-                                                                    <option>DVR - Video</option>
-                                                                    <option>DCT - Video</option>
-                                                                    <option>Maestro - Video</option>
-                                                                    <option>Receiver - Video</option>
-                                                                    <option>MTA - Phone</option>
-                                                                </select>
+                                                                <label>Product*</label>
+                                                                <input type="text" class="form-control" name="username"
+                                                                    id="tx_barcode" placeholder="Barcode" value="">
+                                                                    <select class="form-control" id="sl_prod" style="display: none;">
+                                                                        <option></option>
+                                                                        <option>Modem Eero</option>
+                                                                        <option>Modem</option>
+                                                                        <option>Eero Pro</option>
+                                                                        <option>Eero Beacon</option>
+                                                                        <option>DVR</option>
+                                                                        <option>DCT</option>
+                                                                        <option>Maestro</option>
+                                                                        <option>Receiver</option>
+                                                                        <option>MTA</option>
+                                                                    </select>
+                                                                <label style="font-size: large;"><i><b>Modem
+                                                                            Eero</b></i></label>
                                                             </div>
                                                         </div>
+                                                        <!-- <div class="form-group">
+                                                            <div class="form-line">
+                                                                <label>Product*</label>
+                                                                <!- <input type="text" class="form-control"
+                                                                    data-toggle="modal" data-target="#exampleModal"> ->
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="text" class="form-control"
+                                                                            name="username" placeholder="Barcode"
+                                                                            value="">
+                                                                        <label style="font-size: large;"><i><b>Modem Eero</b></i></label>
+                                                                    </div>
+                                                                    <div class="form-group col-md-1">
+                                                                        <span>Or</span>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5">
+                                                                        <div class="form-group">
+                                                                            <select class="form-control select2">
+                                                                                <option>
+                                                                                    ...........................................
+                                                                                </option>
+                                                                                <option>Modem Eero</option>
+                                                                                <option>Modem</option>
+                                                                                <option>Eero Pro</option>
+                                                                                <option>Eero Beacon</option>
+                                                                                <option>DVR</option>
+                                                                                <option>DCT</option>
+                                                                                <option>Maestro</option>
+                                                                                <option>Receiver</option>
+                                                                                <option>MTA</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+
                                                     </div>
+
                                                     <div class="col-12 col-md-12 col-lg-1">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label class="form-label">Quantity*</label>
+                                                                <label>Quantity*</label>
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control"
+                                                                        name="username" value="1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-lg-2 serial_number_transf"
+                                                        id="serial_number_transf" style="display: none">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <label>Serial Number</label>
                                                                 <input type="text" class="form-control" name="username">
                                                             </div>
                                                         </div>
@@ -590,35 +549,129 @@
                                                                 <br>
                                                                 <a href="#" class="btn btn-icon btn-success"><i
                                                                         class="fas fa-plus"></i></a>
-                                                                <!-- <input type="button" class="form-control btn btn-icon btn-success" name="username" value="Add"> -->
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <!-- <div class="col-12 col-md-12 col-lg-6">
+                                                        <div class="card">
+                                                            <!-- <div class="card-header">
+                                                                <h4>Select Product</h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="section-title mt-0">Select Product</div>
+                                                                <div class="form-group form-float">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Barcode" name="username"
+                                                                                value="">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label class="form-label">Or</label>
+                                                                            <select class="form-control select2">
+                                                                                <option>
+                                                                                    ...........................................
+                                                                                </option>
+                                                                                <option>Modem Eero</option>
+                                                                                <option>Modem</option>
+                                                                                <option>Eero Pro</option>
+                                                                                <option>Eero Beacon</option>
+                                                                                <option>DVR</option>
+                                                                                <option>DCT</option>
+                                                                                <option>Maestro</option>
+                                                                                <option>Receiver</option>
+                                                                                <option>MTA</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
                                                 </div>
+
+                                                <!-- <div class="row">
+                                                            <div class="col-12 col-md-12 col-lg-3">
+                                                                <div class="form-group form-float">
+                                                                    <div class="form-line">
+                                                                        <label>Product*</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="username" value="Modem Eero"
+                                                                                readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-1">
+                                                                <div class="form-group form-float">
+                                                                    <div class="form-line">
+                                                                        <label>Quantity*</label>
+                                                                        <div class="input-group">
+                                                                            <input type="number" class="form-control"
+                                                                                name="username" value="1">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-2 serial_number_transf"
+                                                                id="serial_number_transf" style="display: none">
+                                                                <div class="form-group form-float">
+                                                                    <div class="form-line">
+                                                                        <label>Serial Number</label>
+                                                                        <input type="text" class="form-control"
+                                                                            name="username">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-1">
+                                                                <div class="form-group form-float">
+                                                                    <div class="form-line">
+                                                                        <label>&nbsp;</label>
+                                                                        <br>
+                                                                        <a href="#" class="btn btn-icon btn-success"><i
+                                                                                class="fas fa-plus"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
 
                                                 <div class="row">
                                                     <div class="card-header" style="margin-bottom: 10px">
                                                         <h4>Launched Products</h4>
                                                     </div>
-                                                    <div class="col-12 col-md-12 col-lg-4">
+                                                    <div class="col-12 col-md-12 col-lg-3">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
+                                                                <label>Product</label>
                                                                 <input type="text" class="form-control" name="username"
-                                                                    value="Modem - Internet" readonly>
+                                                                    value="Modem Eero" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-md-12 col-lg-1">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
+                                                                <label>Quantity</label>
                                                                 <input type="text" class="form-control" name="username"
-                                                                    value="1" readonly>
+                                                                    value="10" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- <div class="col-12 col-md-12 col-lg-2">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <label>Serie Number</label>
+                                                                <input type="text" class="form-control" name="username"
+                                                                    value="" placeholder="serie number" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
                                                     <div class="col-12 col-md-12 col-lg-1">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
+                                                                <label>&nbsp;</label>
                                                                 <a class="dropdown-item has-icon" href="#"><i
                                                                         class="fas fa-trash-alt"></i></a>
                                                                 <!-- <input type="button" class="form-control btn btn-icon btn-danger" name="username" value="Delete"> -->
@@ -628,11 +681,11 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-12 col-md-12 col-lg-4">
+                                                    <div class="col-12 col-md-12 col-lg-3">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
                                                                 <input type="text" class="form-control" name="username"
-                                                                    value="Eero Beacon - Internet" readonly>
+                                                                    value="Maestro" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -640,10 +693,18 @@
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
                                                                 <input type="text" class="form-control" name="username"
-                                                                    value="2" readonly>
+                                                                    value="12" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- <div class="col-12 col-md-12 col-lg-2 ">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <input type="text" class="form-control" name="username"
+                                                                    value="" placeholder="serie number" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
                                                     <div class="col-12 col-md-12 col-lg-1">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
@@ -776,6 +837,69 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal with form -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="formModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="formModal">Products</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="">
+                                    <div class="form-group">
+                                        <label>Search</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Barcode or name"
+                                                name="search">
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">brand</th>
+                                            <th scope="col">Model</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Modem</td>
+                                            <td>Hitron </td>
+                                            <td>Coda-4582</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Dvr</td>
+                                            <td>Hikvision</td>
+                                            <td>4E5X-256</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Router</td>
+                                            <td>TPLink</td>
+                                            <td>4561-TP</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
@@ -790,14 +914,12 @@
     <script src="assets/js/app.min.js"></script>
     <script src="assets/bundles/jquery-validation/dist/jquery.validate.min.js"></script>
     <!-- JS Libraies -->
+    <script src="assets/bundles/cleave-js/dist/cleave.min.js"></script>
+    <script src="assets/bundles/cleave-js/dist/addons/cleave-phone.us.js"></script>
     <script src="assets/bundles/jquery-steps/jquery.steps.min.js"></script>
     <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
-    <!-- <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script> -->
-    <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
     <script src="assets/bundles/sweetalert/sweetalert.min.js"></script>
-    <script src="assets/bundles/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <script src="assets/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
-    <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
     <!-- Page Specific JS File -->
     <script src="assets/js/page/form-wizard.js"></script>
     <script src="assets/js/page/forms-advanced-forms.js"></script>

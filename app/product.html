@@ -197,38 +197,45 @@
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand py-3 d-block" style="height: auto !important;">
             <a href="index4.html">
-              <img alt="image" src="assets\img\simplify.png" height="100" width="100" />
+              <img alt="image" src="assets\img\pnl.png" height="50" width="100" />
             </a>
           </div>
+
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
+            <li class="active">
+              <a href="index3.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard Manager</span></a>
+            </li>
             <li class="active">
               <a href="index4.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
             </li>
 
             <li class="">
-              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Order Service</span></a>
+              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
             </li>
 
-            <!--
             <li class="">
-              <a href="warehouse.html" class="nav-link"><i class="fas fa-archive"></i><span>Warehouse</span></a>
+              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Services</span></a>
             </li>
-            -->
 
-            
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-level-down-alt"></i><span>Warehouse</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
               <ul class="dropdown-menu">
-                <li><a href="product.html">Product</a></li>
-                <li><a href="service.html">Service</a></li>
+                <li><a href="trucks.html">Trucks</a></li>
+                <li><a href="transfer.html">Movements</a></li>
+                <li><a href="product.html">Products</a></li>
               </ul>
             </li>
 
-          </ul>
+            <li class="">
+              <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
             </li>
+
           </ul>
-            </li>
+
+          </li>
+          </ul>
+          </li>
           </ul>
         </aside>
       </div>
@@ -243,351 +250,232 @@
               <div class="breadcrumb-item">Product</div>
             </div>
           </div>
+
           <div class="section-body">
-        <div class="row">
+            <div class="row">
               <div class="col-12">
                 <div class="card">
-                  <div class="card-header" >
-                    <a href="new_orders.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> New Product</a>
+                  <div class="card-header">
+                    <a href="new_product.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> New
+                      Product</a>
+                     <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <a href="add_stock.html" class="btn btn-icon icon-left btn-light"><i class="fas fa-plus"></i>
+                      Add Stock</a>
                   </div>
                   <div class="card-body">
-                     
-                      
-                <div class="table-responsive" style="margin-top: 10px">
+
+
+                    <div class="table-responsive" style="margin-top: 10px">
                       <table class="table table-striped" id="table-1">
 
 
                         <thead>
                           <tr>
                             <th class="text-center">
-
                             </th>
-
                             <!-- <th>Date</th> -->
-                            <!-- <th>Tech ID - Name</th> -->
+                            <th>Code</th>
                             <th>Product</th>
+                            <th>Category</th>
+                            <!-- <th>Model</th> -->
+                            <!-- <th>Qt. per Box</th> -->
                             <th>Balance</th>
                             <th>Balance Minimum</th>
+                            <th>Warehouse</th>
                             <th>Action</th>
                           </tr>
                         </thead>
 
-
-
                         <tbody>
                           <tr>
-                            <td>
-                              1
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Modem
-                            </td>
+                            <td> 1</td>
+                            <td>1526</td>
+                            <td>Modem</td>
+                            <td>Internet</td>
+                            <!-- <td>Coda-4582</td> -->
+                            <!-- <td>6</td> -->
                             <td>10</td>
-                            <td>
-                              2
-                            </td>
-                            <td>
-                              <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              2
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>TV
-                            </td>
-                            <td>10</td>
-                            <td>
-                              2
-                            </td>
-                            <td>
-                              <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              3
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Router
-                            </td>
-                            <td>10</td>
-                            <td>
-                              2
-                            </td>
-                            <td>
-                              <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              4
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>TV
-                            </td>
                             <td>2</td>
+                            <td>Central</td>
                             <td>
-                              2
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
                                 </div>
-                              </div></td>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
+                            <td>2</td>
+                            <td>1528</td>
+                            <td>Dvr</td>
+                            <td>Video</td>
+                            <!-- <td>4E5X-256</td> -->
+                            <!-- <td>10</td> -->
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Central</td>
                             <td>
-                              5
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Router
-                            </td>
-                            <td>8</td>
-                            <td>
-                              2
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
                                 </div>
-                              </div></td>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
+                            <td>3</td>
+                            <td>1529</td>
+                            <td>Modem Eero</td>
+                            <td>Internet</td>
+                            <!-- <td>4561-TP</td> -->
+                            <!-- <td>10</td> -->
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Central</td>
                             <td>
-                              6
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Action
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
+                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
+                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                </div>
+                              </div>
                             </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Router
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>1530</td>
+                            <td>Dct</td>
+                            <td>Video</td>
+                            <!-- <td>MHDX 1108</td> -->
+                            <!-- <td>10</td> -->
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Central</td>
+                            <td>
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Action
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
+                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
+                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                </div>
+                              </div>
                             </td>
+                          </tr>
+                          <tr>
+                            <td> 5</td>
+                            <td>1526</td>
+                            <td>Modem</td>
+                            <td>Internet</td>
+                            <!-- <td>Coda-4582</td> -->
+                            <!-- <td>6</td> -->
                             <td>10</td>
+                            <td>2</td>
+                            <td>Justin - Truck-789</td>
                             <td>
-                              5
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
                                 </div>
-                              </div></td>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
+                            <td>6</td>
+                            <td>1528</td>
+                            <td>Dvr</td>
+                            <td>Video</td>
+                            <!-- <td>4E5X-256</td> -->
+                            <!-- <td>10</td> -->
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Justin - Truck-789</td>
                             <td>
-                              7
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Drop
-                            </td>
-                            <td>8</td>
-                            <td>
-                              5
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
                                 </div>
-                              </div></td>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
+                            <td>7</td>
+                            <td>1529</td>
+                            <td>Modem Eero</td>
+                            <td>Internet</td>
+                            <!-- <td>4561-TP</td> -->
+                            <!-- <td>10</td> -->
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Justin - Truck-789</td>
                             <td>
-                              8
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Drop
-                            </td>
-                            <td>10</td>
-                            <td>
-                              2
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Action
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                  style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
                                   <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
                                 </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              9
+                              </div>
                             </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Modem
-                            </td>
-                            <td>20</td>
-                            <td>
-                              2
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              10
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Modem
-                            </td>
-                            <td>10</td>
-                            <td>
-                              5
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              11
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Modem
-                            </td>
-                            <td>8</td>
-                            <td>
-                              4
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              12
-                            </td>
-                            
-                            <!-- <td> 089 - Jhon </td> -->
-                            <td>Modem
-                            </td>
-                            <td>10</td>
-                            <td>
-                              2
-                            </td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    
-                    
+
+
                   </div>
                 </div>
               </div>
             </div>
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
+
+
+
           </div>
+          
         </section>
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -701,7 +589,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2019 <div class="bullet"></div> Design By <a href="#">Redstar</a>
+          Copyright &copy; 2020 <div class="bullet"></div> Design By <a href="#">Simplify</a>
         </div>
         <div class="footer-right">
         </div>
