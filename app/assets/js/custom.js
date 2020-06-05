@@ -47,5 +47,10 @@ $(document).ready(function(){
         }
     })
 
+
+//Alerta Approve/Disapprove
+// $("#job_report_approve").click().
+// swal('Good Job', 'You clicked the button!', 'success');
+
     
 })

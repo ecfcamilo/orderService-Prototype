@@ -206,49 +206,67 @@
 
                     <ul class="sidebar-menu">
                         <li class="menu-header">Menu</li>
-                        <li class="active">
-                          <a href="index3.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard Manager</span></a>
+                        <li class="active dropdown">
+                          <a href="" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="index3.html">Dashboard Manager</a></li>
+                            <li><a href="index4.html">Dashboard Technician</a></li>
+                          </ul>
                         </li>
-                        <li class="active">
-                            <a href="index4.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
-                        </li>
-
+            
                         <li class="">
-                            <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job
-                                    Report</span></a>
+                          <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
                         </li>
-
-                        <li class="">
-                            <a href="service.html" class="nav-link"><i
-                                    class="fas fa-user-tie"></i><span>Services</span></a>
-                        </li>
-
+            
                         <!-- <li class="">
-                          <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Products</span></a>
+                          <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Job Codes</span></a>
                         </li> -->
-
+            
+                        <!-- <li class="">
+                          <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Equipments</span></a>
+                        </li> -->
+            
                         <!--
                         <li class="">
                           <a href="warehouse.html" class="nav-link"><i class="fas fa-archive"></i><span>Warehouse</span></a>
                         </li>
                         -->
-
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i
-                                    class="fas fa-warehouse"></i><span>Warehouse</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="trucks.html">Trucks</a></li>
-                                <li><a href="transfer.html">Movements</a></li>
-                                <li><a href="product.html">Products</a></li>
-                            </ul>
-                        </li>
-
+            
+                        
+            
                         <li class="">
-                            <a href="settings.html" class="nav-link"><i
-                                    class="fas fa-wrench"></i><span>Settings</span></a>
+                          <a href="#" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
                         </li>
-
-                    </ul>
+            
+                        <li class="">
+                          <a href="#" class="nav-link"><i class="
+                            fas fa-money-bill"></i><span>Payments</span></a>
+                        </li>
+            
+                        <li class="dropdown">
+                          <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
+                          <ul class="dropdown-menu">
+                            <!-- <li><a href="trucks.html">Trucks</a></li> -->
+                            <li><a href="inventory.html">Inventory</a></li>
+                            <li><a href="transfer.html">Movements</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="service.html">Job Codes</a></li>
+                            <li><a href="product.html">Equipments</a></li>
+                            <li><a href="trucks.html">Trucks</a></li>
+                            <li><a href="#">Employees</a></li>
+                            <li><a href="#">Company</a></li>
+                          </ul>
+                        </li>
+            
+                        <li class="">
+                          <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
+                        </li>
+            
+                      </ul>
 
                 </aside>
             </div>
@@ -256,7 +274,7 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Transfer Product</h1>
+                        <h1>Transfer Equipment</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                             <div class="breadcrumb-item"><a href="#">Job Report</a></div>
@@ -310,10 +328,10 @@
                                                                 <label>Warehouse Destiny*</label>
                                                                 <select class="form-control">
                                                                     <option></option>
-                                                                    <option>Truck -789 | Jhon</option>
-                                                                    <option>Truck -529 | james</option>
-                                                                    <option>Truck -256 | Justin</option>
-                                                                    <option>Truck -126 | Ian</option>
+                                                                    <option>Jhon / Truck-789</option>
+                                                                    <option>James / Truck-529</option>
+                                                                    <option>Justin / Truck-256</option>
+                                                                    <option>Ian / Truck-126</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -458,13 +476,13 @@
                                                     </div>
                                                 </div>
                                             </fieldset>
-                                            <h3>Products - Finish</h3>
+                                            <h3>Equipments - Finish</h3>
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="col-12 col-md-12 col-lg-3">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label>Product*</label>
+                                                                <label>Equipment*</label>
                                                                 <input type="text" class="form-control" name="username"
                                                                     id="tx_barcode" placeholder="Barcode" value="">
                                                                     <select class="form-control" id="sl_prod" style="display: none;">
@@ -555,11 +573,11 @@
 
                                                     <!-- <div class="col-12 col-md-12 col-lg-6">
                                                         <div class="card">
-                                                            <!-- <div class="card-header">
-                                                                <h4>Select Product</h4>
+                                                            <!- <div class="card-header">
+                                                                <h4>Select Equipment</h4>
                                                             </div>
                                                             <div class="card-body">
-                                                                <div class="section-title mt-0">Select Product</div>
+                                                                <div class="section-title mt-0">Select Equipment</div>
                                                                 <div class="form-group form-float">
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-6">
@@ -595,7 +613,7 @@
                                                             <div class="col-12 col-md-12 col-lg-3">
                                                                 <div class="form-group form-float">
                                                                     <div class="form-line">
-                                                                        <label>Product*</label>
+                                                                        <label>Equipment*</label>
                                                                         <div class="input-group">
                                                                             <input type="text" class="form-control"
                                                                                 name="username" value="Modem Eero"
@@ -639,12 +657,12 @@
 
                                                 <div class="row">
                                                     <div class="card-header" style="margin-bottom: 10px">
-                                                        <h4>Launched Products</h4>
+                                                        <h4>Launched Equipments</h4>
                                                     </div>
                                                     <div class="col-12 col-md-12 col-lg-3">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <label>Product</label>
+                                                                <label>Equipment</label>
                                                                 <input type="text" class="form-control" name="username"
                                                                     value="Modem Eero" readonly>
                                                             </div>
@@ -844,7 +862,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="formModal">Products</h5>
+                                <h5 class="modal-title" id="formModal">Equipments</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -867,7 +885,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Product</th>
+                                            <th scope="col">Equipment</th>
                                             <th scope="col">brand</th>
                                             <th scope="col">Model</th>
                                         </tr>

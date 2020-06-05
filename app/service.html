@@ -202,23 +202,24 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
-            <li class="active">
-              <a href="index3.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard Manager</span></a>
-            </li>
-            <li class="active">
-              <a href="index4.html" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
+            <li class="active dropdown">
+              <a href="" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="index3.html">Dashboard Manager</a></li>
+                <li><a href="index4.html">Dashboard Technician</a></li>
+              </ul>
             </li>
 
             <li class="">
               <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
             </li>
 
-            <li class="">
-              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Services</span></a>
-            </li>
+            <!-- <li class="">
+              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Job Codes</span></a>
+            </li> -->
 
             <!-- <li class="">
-              <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Products</span></a>
+              <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Equipments</span></a>
             </li> -->
 
             <!--
@@ -227,12 +228,33 @@
             </li>
             -->
 
+            
+
+            <li class="">
+              <a href="#" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
+            </li>
+
+            <li class="">
+              <a href="#" class="nav-link"><i class="
+                fas fa-money-bill"></i><span>Payments</span></a>
+            </li>
+
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
               <ul class="dropdown-menu">
-                <li><a href="trucks.html">Trucks</a></li>
+                <!-- <li><a href="trucks.html">Trucks</a></li> -->
+                <li><a href="inventory.html">Inventory</a></li>
                 <li><a href="transfer.html">Movements</a></li>
-                <li><a href="product.html">Products</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="service.html">Job Codes</a></li>
+                <li><a href="product.html">Equipments</a></li>
+                <li><a href="trucks.html">Trucks</a></li>
+                <li><a href="#">Employees</a></li>
+                <li><a href="#">Company</a></li>
               </ul>
             </li>
 
@@ -247,11 +269,11 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Service</h1>
+            <h1>Job Codes</h1>
             <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="index4.html">Dashboard</a></div>
               <div class="breadcrumb-item">Warehouse</div>
-              <div class="breadcrumb-item">Service</div>
+              <div class="breadcrumb-item">Job Codes</div>
             </div>
           </div>
           <div class="section-body">
@@ -259,7 +281,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header" >
-                    <a href="new_service.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> New Service</a>
+                    <a href="new_service.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> New Job Codes</a>
                   </div>
                   <div class="card-body">
                      
@@ -274,7 +296,7 @@
                             </th>
                             <th>Code</th>
                             <th>Category</th>
-                            <th>Service</th>
+                            <th>Job Codes</th>
                             <th>Description</th>
                             <th>Price</th>
                             <th>Points</th>
@@ -300,16 +322,8 @@
                             <td>10</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td>
-                              <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
                             </td>
                           </tr>
                           <tr>
@@ -325,16 +339,8 @@
                             <td>60</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td>
-                              <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
                             </td>
                           </tr>
                           <tr>
@@ -350,16 +356,8 @@
                             <td>60</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
                             <td>
-                              <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
                             </td>
                           </tr>
                           <tr>
@@ -374,16 +372,10 @@
                             <td>70</td>
                             <td>70</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <td>
@@ -397,16 +389,10 @@
                             <td>95</td>
                             <td>95</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <td>
@@ -421,16 +407,10 @@
                             <td>105</td>
                             <td>105</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <td>
@@ -444,16 +424,10 @@
                             <td>145</td>
                             <td>145</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <td>
@@ -467,16 +441,10 @@
                             <td>15</td>
                             <td>15</td>
                             <td><div class="badge badge-success badge-shadow">Active</div></td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <td>
@@ -490,16 +458,9 @@
                             <td>000</td>
                             <td>000</td>
                             <td><div class="badge badge-danger badge-shadow">Inactive</div></td>
-                            <td><div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Detail</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-                                </div>
-                              </div></td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a></td>
                           </tr>
                         </tbody>
                       </table>
