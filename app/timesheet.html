@@ -7,10 +7,8 @@
   <title>Simplify - Simplificar para Otimizar</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
-  <link rel="stylesheet" href="assets/bundles/jqvmap/dist/jqvmap.min.css">
-  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons.min.css">
-  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons-wind.min.css">
-  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -161,7 +159,7 @@
                     <i class="fas fa-bell"></i>
                   </span>
                   <span class="dropdown-item-desc">
-                    Welcome to Simplify!
+                    Welcome to Ality template!
                     <span class="time">Yesterday</span>
                   </span>
                 </a>
@@ -176,16 +174,16 @@
               <img alt="image" src="assets/img/jr.jpg" class="user-img-radious-style">
               <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-title">Levino Marçal Junior</div>
+              <div class="dropdown-title">Hello Sarah Smith</div>
               <a href="profile.html" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
-              <!--<a href="timeline.html" class="dropdown-item has-icon">
+              <a href="timeline.html" class="dropdown-item has-icon">
                 <i class="fas fa-bolt"></i> Activities
               </a>
               <a href="" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Settings
-              </a>-->
+              </a>
               <div class="dropdown-divider"></div>
               <a href="auth-login.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -194,6 +192,7 @@
           </li>
         </ul>
       </nav>
+
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand py-3 d-block" style="height: auto !important;">
@@ -230,7 +229,7 @@
             </li>
             -->
 
-            
+
 
             <li class="">
               <a href="timesheet.html" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
@@ -250,7 +249,8 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
+              <a href="#" class="nav-link has-dropdown"><i
+                  class="far fa-address-book"></i><span>Registrations</span></a>
               <ul class="dropdown-menu">
                 <li><a href="service.html">Job Codes</a></li>
                 <li><a href="product.html">Equipments</a></li>
@@ -266,245 +266,219 @@
 
           </ul>
 
+          </li>
+          </ul>
+          </li>
+          </ul>
         </aside>
       </div>
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Dashboard – Technician Name</h1>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="material-icons card-icon col-green">assignment_turned_in</i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> 80
-
-                      </h3>
-                      <span class="text-muted">Job Report</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm">
-                      <!-- <a href="#" class="btn btn-icon btn-lg btn-success"><i class="fas fa-check"></i></a> 
-                      <span class="text-nowrap">Input Order</span>-->
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="fas fa-hiking card-icon col-blue"></i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> $200
-                      </h3>
-                      <span class="text-muted">Average Hour</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm">
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="fas fa-chart-line card-icon col-orange"></i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> $1,200
-                      </h3>
-                      <span class="text-muted">Projection</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="fas fa-dollar-sign card-icon col-cyan"></i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> $3,200
-                      </h3>
-                      <span class="text-muted">Receivable</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm"> </p>
-                  </div>
-                </div>
-              </div>
+            <h1>Timesheet</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="index4.html">Dashboard</a></div>
+              <div class="breadcrumb-item">Warehouse</div>
+              <div class="breadcrumb-item">Timesheet</div>
             </div>
           </div>
 
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <a href="new_timesheet.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> Add Timesheet</a>
+                    <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <a href="add_stock.html" class="btn btn-icon icon-left btn-light"><i class="fas fa-plus"></i>
+                      Add Stock</a> -->
+                  </div>
+                  <div class="card-body">
 
-          <div class="row">
-            <div class="col-lg-9 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Payments And Job Reports Last 6 Months</h4>
-                </div>
-                <div class="card-body">
-                  <div class="recent-report__chart">
-                    <div id="chart5_custom_Tech"></div>
+
+                    <div class="table-responsive" style="margin-top: 10px">
+                      <table class="table table-striped" id="table-1">
+
+
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                            </th>
+                            <th>Year/Month</th>
+                            <th>Day</th>
+                            <th>Time In 1</th>
+                            <th>Time Out 1</th>
+                            <th>Type 1</th>
+                            <th>Time In 2</th>
+                            <th>Time Out 2</th>
+                            <th>Type 2</th>
+                            <th>Time In 3</th>
+                            <th>Time Out 3</th>
+                            <th>Type 3</th>
+                            <th>Total</th>
+                            <!-- <th>Observation</th> -->
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td> 1</td>
+                            <td>2020-06</td>
+                            <td>05 / Fri</td>
+                            <td>08:00am</td>
+                            <td>11:00am</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td>03:00pm</td>
+                            <td>05:00pm</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>05h
+                              <div class="progress" data-height="5">
+                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="60%" aria-valuenow="80"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>2020-06</td>
+                            <td>04 / Thu</td>
+                            <td>08:00am</td>
+                            <td>09:00am</td>
+                            <td><span class="badge badge-info">Training</span></td>
+                            <td>09:00am</td>
+                            <td>11:00am</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td>12:00pm</td>
+                            <td>06:00pm</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td>09h
+                              <div class="progress" data-height="5">
+                                <div class="progress-bar l-bg-green" role="progressbar" data-width="100%" aria-valuenow="80"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>2020-06</td>
+                            <td>03 / Wed</td>
+                            <td>08:00am</td>
+                            <td>12:00am</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td>02:00pm</td>
+                            <td>05:00pm</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>07h
+                              <div class="progress" data-height="5">
+                                <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="80"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>2020-06</td>
+                            <td>02 / Tue</td>
+                            <td>01:00pm</td>
+                            <td>06:00pm</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>05h
+                              <div class="progress" data-height="5">
+                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="60%" aria-valuenow="80"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>2020-06</td>
+                            <td>01 / Mon</td>
+                            <td>08:00am</td>
+                            <td>11:00am</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td>02:00pm</td>
+                            <td>05:00pm</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>06h
+                              <div class="progress" data-height="5">
+                                <div class="progress-bar l-bg-orange" role="progressbar" data-width="70%" aria-valuenow="80"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>2020-05</td>
+                            <td>29 / Fri</td>
+                            <td>08:00am</td>
+                            <td>12:00am</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td>01:00pm</td>
+                            <td>05:00pm</td>
+                            <td><span class="badge badge-light">Work</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>08h
+                              <div class="progress" data-height="5">
+                                <div class="progress-bar l-bg-green" role="progressbar" data-width="100%" aria-valuenow="80"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
                   </div>
                 </div>
               </div>
             </div>
 
 
-            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
-              <div class="card" style="min-height: 455px">
-                <div class="card-header">
-                  <h4>Equipments in Warehouse</h4>
-                  <div class="card-header-action">
-                    <a href="product.html" class="btn btn-primary">View All</a>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">2 | Min: 4</div>
-                    <div class="font-weight-bold">Router</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">2 | Min: 2</div>
-                    <div class="font-weight-bold">Modem</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">5 | Min: 2</div>
-                    <div class="font-weight-bold">Drop</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-yellow" role="progressbar" data-width="67%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">10 | Min: 5</div>
-                    <div class="font-weight-bold">Cable</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="70%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">10 | Min: 2</div>
-                    <div class="font-weight-bold">TV</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">30 | Min: 1</div>
-                    <div class="font-weight-bold">Fusion</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="90%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
 
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-lg-9 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Points And Hours Jobs - Days of Last Week </h4>
-                </div>
-                <div class="card-body">
-                  <div class="recent-report__chart">
-                    <!-- <div id="chart3AverageScoreTimeJob_Tech"></div> -->
-                    <!-- <div id="chartAverageScoreTimeJob_Tech"></div> -->
-                    <div id="chart5_PointsTimeJob_Tech"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
-              <div class="card" style="min-height: 455px">
-                <div class="card-header">
-                  <h4>Top Jobs</h4>
-                  <div class="card-header-action">
-                    <a href="orders.html" class="btn btn-primary">View All</a>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">2,675</div>
-                    <div class="font-weight-bold">Internet</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-purple" role="progressbar" data-width="80%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">1,753</div>
-                    <div class="font-weight-bold">TV</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="67%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">1,254</div>
-                    <div class="font-weight-bold">Panel</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-orange" role="progressbar" data-width="58%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">984</div>
-                    <div class="font-weight-bold">Repair</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-yellow" role="progressbar" data-width="36%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">563</div>
-                    <div class="font-weight-bold">Speed Test</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-cyan" role="progressbar" data-width="28%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">345</div>
-                    <div class="font-weight-bold">Fusion</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-light-blue" role="progressbar" data-width="20%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
           </div>
 
         </section>
@@ -629,19 +603,15 @@
   </div>
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
+  <script src="assets/bundles/datatables/datatables.min.js"></script>
+  <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/js/page/datatables.js"></script>
   <!-- JS Libraies -->
-  <script src="assets/bundles/chartjs/chart.min.js"></script>
-  <script src="assets/js/page/chart-apexcharts.js"></script>
-  <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
   <!-- Page Specific JS File -->
-  <script src="assets/js/page/index2.js"></script>-->
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/page/widget-chart.js"></script>
-
 </body>
 
 </html>

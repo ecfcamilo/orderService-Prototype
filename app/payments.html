@@ -7,10 +7,8 @@
   <title>Simplify - Simplificar para Otimizar</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
-  <link rel="stylesheet" href="assets/bundles/jqvmap/dist/jqvmap.min.css">
-  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons.min.css">
-  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons-wind.min.css">
-  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -161,7 +159,7 @@
                     <i class="fas fa-bell"></i>
                   </span>
                   <span class="dropdown-item-desc">
-                    Welcome to Simplify!
+                    Welcome to Ality template!
                     <span class="time">Yesterday</span>
                   </span>
                 </a>
@@ -176,16 +174,16 @@
               <img alt="image" src="assets/img/jr.jpg" class="user-img-radious-style">
               <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-title">Levino Marçal Junior</div>
+              <div class="dropdown-title">Hello Sarah Smith</div>
               <a href="profile.html" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
-              <!--<a href="timeline.html" class="dropdown-item has-icon">
+              <a href="timeline.html" class="dropdown-item has-icon">
                 <i class="fas fa-bolt"></i> Activities
               </a>
               <a href="" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Settings
-              </a>-->
+              </a>
               <div class="dropdown-divider"></div>
               <a href="auth-login.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -201,7 +199,6 @@
               <img alt="image" src="assets\img\pnl.png" height="50" width="100" />
             </a>
           </div>
-
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
             <li class="active dropdown">
@@ -213,7 +210,7 @@
             </li>
 
             <li class="">
-              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
+              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Payments</span></a>
             </li>
 
             <!-- <li class="">
@@ -265,248 +262,317 @@
             </li>
 
           </ul>
-
         </aside>
       </div>
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Dashboard – Technician Name</h1>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="material-icons card-icon col-green">assignment_turned_in</i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> 80
-
-                      </h3>
-                      <span class="text-muted">Job Report</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm">
-                      <!-- <a href="#" class="btn btn-icon btn-lg btn-success"><i class="fas fa-check"></i></a> 
-                      <span class="text-nowrap">Input Order</span>-->
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="fas fa-hiking card-icon col-blue"></i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> $200
-                      </h3>
-                      <span class="text-muted">Average Hour</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm">
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="fas fa-chart-line card-icon col-orange"></i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> $1,200
-                      </h3>
-                      <span class="text-muted">Projection</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <i class="fas fa-dollar-sign card-icon col-cyan"></i>
-                <div class="card-wrap">
-                  <div class="padding-20">
-                    <div class="text-right">
-                      <h3 class="font-light mb-0">
-                        <i class="ti-arrow-up text-success"></i> $3,200
-                      </h3>
-                      <span class="text-muted">Receivable</span>
-                    </div>
-                    <p class="mb-3 text-muted pull-left text-sm"> </p>
-                  </div>
-                </div>
-              </div>
+            <h1>Payments</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="index4.html">Dashboard</a></div>
+              <div class="breadcrumb-item">Payments</div>
             </div>
           </div>
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4><a href="new_orders.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> New Payment</a></h4>
+                    <!-- <div>
+                      <a href="new_orders.html" class="btn btn-icon icon-left btn-info"><i class="fas fa-plus"></i> New Job Report</a>
+                    </div> -->
+                    <div class="card-header-action">
+                      <div class="buttons">
+                        <a href="#" class="btn btn-outline-success" onclick="swal('Good Job', 'Jobs Reports successfully approved !', 'success');" >Approve</a>
+                        <a href="#" class="btn btn-outline-danger"onclick="swal('Good Job', 'Jobs Reports successfully Disapproved !', 'success');">Disapprove</a>
+                      </div>
+                      <!-- <a href="new_orders.html" class="btn btn-icon icon-left btn-info"><i class="fas fa-plus"></i> New
+                        Job Report</a> -->
+                    </div>
+                  </div>
+                  <div class="card-body">
+
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="table-2">
+
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              <div class="custom-checkbox custom-checkbox-table custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
+                                  class="custom-control-input" id="checkbox-all">
+                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </th>
+                            <th class="text-center">
+                            </th>
+                            <th>Date</th>
+                            <th>Technician</th>
+                            <th>Code Job</th>
+                            <th>Desc. Service</th>
+                            <th>Estimate Pay</th>
+                            <th>Points</th>
+                            <th>Job Status</th>
+                            <th>Checked Manager</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-1">
+                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              1
+                            </td>
+                            <td>2020-05-07</td>
+                            <td>Justin</td>
+                            <td>125456</td>
+                            <td>Internet</td>
+                            <td>$ 20,13</td>
+                            <td>120</td>
+                            <td>Completed</td>
+                            <td>
+                              <div class="badge badge-warning badge-shadow">Pendent</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-2">
+                                <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              2
+                            </td>
+                            <td>2020-05-07</td>
+                            <td>Justin</td>
+                            <td>996587</td>
+                            <td>Internet/Video</td>
+                            <td>$ 0,00</td>
+                            <td>0</td>
+                            <td>Cancelled</td>
+                            <td>
+                              <div class="badge badge-warning badge-shadow">Pendent</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left "><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-3">
+                                <label for="checkbox-3" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              3
+                            </td>
+                            <td>2020-05-07</td>
+                            <td>Justin</td>
+                            <td>322658</td>
+                            <td>Internet/Telephone</td>
+                            <td>$ 37,32</td>
+                            <td>80</td>
+                            <td>Completed</td>
+                            <td>
+                              <div class="badge badge-success badge-shadow">Yes</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-4">
+                                <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              4
+                            </td>
+                            <td>2020-05-07</td>
+                            <td>Justin</td>
+                            <td>796584</td>
+                            <td>Internet</td>
+                            <td>$ 20,13</td>
+                            <td>120</td>
+                            <td>Completed</td>
+                            <td>
+                              <div class="badge badge-danger badge-shadow">No</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-5">
+                                <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              5
+                            </td>
+                            <td>2020-05-06</td>
+                            <td>Justin</td>
+                            <td>138459</td>
+                            <td>Triple Play</td>
+                            <td>$ 46,31</td>
+                            <td>160</td>
+                            <td>Completed</td>
+                            <td>
+                              <div class="badge badge-success badge-shadow">Yes</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-6">
+                                <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              6
+                            </td>
+                            <td>2020-05-06</td>
+                            <td>Jhon</td>
+                            <td>529645</td>
+                            <td>Internet/Video/SH</td>
+                            <td>$ 0,00</td>
+                            <td>0</td>
+                            <td>Cancelled</td>
+                            <td>
+                              <div class="badge badge-success badge-shadow">Yes</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-7">
+                                <label for="checkbox-7" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              7
+                            </td>
+                            <td>2020-05-06</td>
+                            <td>Jhon</td>
+                            <td>648735</td>
+                            <td>Installation Internet</td>
+                            <td>$ 0,00</td>
+                            <td>0</td>
+                            <td>Reschedule</td>
+                            <td>
+                              <div class="badge badge-light badge-shadow">No Required</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center pt-2">
+                              <div class="custom-checkbox custom-control">
+                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                  id="checkbox-8">
+                                <label for="checkbox-8" class="custom-control-label">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>2020-05-05</td>
+                            <td>Ian</td>
+                            <td>589315</td>
+                            <td>Internet/Telephone</td>
+                            <td>$ 0,00</td>
+                            <td>0</td>
+                            <td>Hold</td>
+                            <td>
+                              <div class="badge badge-light badge-shadow">No Required</div>
+                            </td>
+                            <td>
+                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
+                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
+
+                              <!-- <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Action
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Open</a>
+                                  <!- <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
+                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a> ->
+                                </div>
+                              </div> -->
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
 
 
-          <div class="row">
-            <div class="col-lg-9 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Payments And Job Reports Last 6 Months</h4>
-                </div>
-                <div class="card-body">
-                  <div class="recent-report__chart">
-                    <div id="chart5_custom_Tech"></div>
+                    
                   </div>
                 </div>
               </div>
             </div>
 
 
-            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
-              <div class="card" style="min-height: 455px">
-                <div class="card-header">
-                  <h4>Equipments in Warehouse</h4>
-                  <div class="card-header-action">
-                    <a href="product.html" class="btn btn-primary">View All</a>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">2 | Min: 4</div>
-                    <div class="font-weight-bold">Router</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">2 | Min: 2</div>
-                    <div class="font-weight-bold">Modem</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-danger" role="progressbar" data-width="20%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">5 | Min: 2</div>
-                    <div class="font-weight-bold">Drop</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-yellow" role="progressbar" data-width="67%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">10 | Min: 5</div>
-                    <div class="font-weight-bold">Cable</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="70%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">10 | Min: 2</div>
-                    <div class="font-weight-bold">TV</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">30 | Min: 1</div>
-                    <div class="font-weight-bold">Fusion</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="90%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
 
-                </div>
-              </div>
-            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           </div>
-
-          <div class="row">
-
-            <div class="col-lg-9 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Points And Hours Jobs - Days of Last Week </h4>
-                </div>
-                <div class="card-body">
-                  <div class="recent-report__chart">
-                    <!-- <div id="chart3AverageScoreTimeJob_Tech"></div> -->
-                    <!-- <div id="chartAverageScoreTimeJob_Tech"></div> -->
-                    <div id="chart5_PointsTimeJob_Tech"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-12 col-12 col-sm-12">
-              <div class="card" style="min-height: 455px">
-                <div class="card-header">
-                  <h4>Top Jobs</h4>
-                  <div class="card-header-action">
-                    <a href="orders.html" class="btn btn-primary">View All</a>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">2,675</div>
-                    <div class="font-weight-bold">Internet</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-purple" role="progressbar" data-width="80%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">1,753</div>
-                    <div class="font-weight-bold">TV</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-green" role="progressbar" data-width="67%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">1,254</div>
-                    <div class="font-weight-bold">Panel</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-orange" role="progressbar" data-width="58%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">984</div>
-                    <div class="font-weight-bold">Repair</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar l-bg-yellow" role="progressbar" data-width="36%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">563</div>
-                    <div class="font-weight-bold">Speed Test</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-cyan" role="progressbar" data-width="28%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="m-b-20">
-                    <div class="text-small float-right font-weight-bold text-muted">345</div>
-                    <div class="font-weight-bold">Fusion</div>
-                    <div class="progress" data-height="5">
-                      <div class="progress-bar bg-light-blue" role="progressbar" data-width="20%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
         </section>
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -629,19 +695,17 @@
   </div>
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
+  <script src="assets/bundles/datatables/datatables.min.js"></script>
+  <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/js/page/datatables.js"></script>
+  <script src="assets/bundles/sweetalert/sweetalert.min.js"></script>
+  <script src="assets/js/page/sweetalert.js"></script>
   <!-- JS Libraies -->
-  <script src="assets/bundles/chartjs/chart.min.js"></script>
-  <script src="assets/js/page/chart-apexcharts.js"></script>
-  <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
   <!-- Page Specific JS File -->
-  <script src="assets/js/page/index2.js"></script>-->
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/page/widget-chart.js"></script>
-
 </body>
 
 </html>
