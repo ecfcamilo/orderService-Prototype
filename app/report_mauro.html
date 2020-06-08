@@ -228,7 +228,7 @@
             </li>
             -->
 
-            
+
 
             <li class="">
               <a href="timesheet.html" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
@@ -248,18 +248,18 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
+              <a href="#" class="nav-link has-dropdown"><i
+                  class="far fa-address-book"></i><span>Registrations</span></a>
               <ul class="dropdown-menu">
                 <li><a href="service.html">Job Codes</a></li>
                 <li><a href="product.html">Equipments</a></li>
                 <li><a href="trucks.html">Trucks</a></li>
-                <li><a href="#">Employees</a></li> 
+                <li><a href="#">Employees</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i
-                  class="far fa-address-book"></i><span>Reports</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Reports</span></a>
               <ul class="dropdown-menu">
                 <li><a href="report_mauro.html">Jobs Reported</a></li>
                 <li><a href="#">Others</a></li>
@@ -277,10 +277,10 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Job Report</h1>
+            <h1>Reports</h1>
             <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="index4.html">Dashboard</a></div>
-              <div class="breadcrumb-item">Job Report</div>
+              <div class="breadcrumb-item">Jobs Reported</div>
             </div>
           </div>
           <div class="section-body">
@@ -288,18 +288,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4><a href="new_orders.html" class="btn btn-icon icon-left btn-success"><i class="fas fa-plus"></i> New Job Report</a></h4>
-                    <!-- <div>
-                      <a href="new_orders.html" class="btn btn-icon icon-left btn-info"><i class="fas fa-plus"></i> New Job Report</a>
-                    </div> -->
-                    <div class="card-header-action">
-                      <div class="buttons">
-                        <a href="#" class="btn btn-outline-success" onclick="swal('Good Job', 'Jobs Reports successfully approved !', 'success');" >Approve</a>
-                        <a href="#" class="btn btn-outline-danger"onclick="swal('Good Job', 'Jobs Reports successfully Disapproved !', 'success');">Disapprove</a>
-                      </div>
-                      <!-- <a href="new_orders.html" class="btn btn-icon icon-left btn-info"><i class="fas fa-plus"></i> New
-                        Job Report</a> -->
-                    </div>
+                    <h4>Jobs Reported</h4>
                   </div>
                   <div class="card-body">
 
@@ -409,20 +398,6 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-md-12 col-lg-2">
-                        <div class="form-group form-float">
-                          <div class="form-line">
-                            <label>Manager Approve</label>
-                            <select class="form-control" id="job_status">
-                              <option value="">All</option>
-                              <option value="">Pendent</option>
-                              <option value="">Yes</option>
-                              <option value="">No</option>
-                              <option value=" ">No Required</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
                       <div class="col-12 col-md-12 col-lg-1">
                         <div class="form-group form-float">
                             <div class="form-line">
@@ -433,43 +408,28 @@
                             </div>
                         </div>
                     </div>
+
                     </div>
 
                     <div class="table-responsive">
-                      <table class="table table-striped" id="table-2">
+                      <table class="table table-striped" id="tableExport">
 
                         <thead>
                           <tr>
-                            <th class="text-center">
-                              <div class="custom-checkbox custom-checkbox-table custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                                  class="custom-control-input" id="checkbox-all">
-                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </th>
                             <th class="text-center">
                             </th>
                             <th>Date</th>
                             <th>Technician</th>
                             <th>Job ID Client</th>
-                            <th>Desc. Service</th>
-                            <th>Estimate Pay</th>
-                            <th>Points</th>
+                            <th>Job Codes</th>
+                            <th>Quantity</th>
                             <th>Job Status</th>
-                            <th>Manager Approve</th>
-                            <th>Action</th>
+                            <td>Observation</td>
                           </tr>
                         </thead>
 
                         <tbody>
                           <tr>
-                            <td class="text-center pt-2">
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
                             <td>
                               1
                             </td>
@@ -477,25 +437,11 @@
                             <td>Justin</td>
                             <td>125456</td>
                             <td>INT</td>
-                            <td>$ 20,13</td>
-                            <td>120</td>
+                            <td>1</td>
                             <td>Completed</td>
-                            <td>
-                              <div class="badge badge-warning badge-shadow">Pendent</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-2">
-                                <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
                             <td>
                               2
                             </td>
@@ -503,191 +449,89 @@
                             <td>Justin</td>
                             <td>996587</td>
                             <td>IV</td>
-                            <td>$ 0,00</td>
-                            <td>0</td>
-                            <td>Cancelled</td>
-                            <td>
-                              <div class="badge badge-warning badge-shadow">Pendent</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left "><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <!-- <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-3" disabled>
-                                <label for="checkbox-3" class="custom-control-label">&nbsp;</label>
-                              </div> -->
-                            </td>
                             <td>
                               3
                             </td>
                             <td>2020-05-07</td>
                             <td>Justin</td>
                             <td>322658</td>
-                            <td>IT</td>
-                            <td>$ 37,32</td>
-                            <td>80</td>
+                            <td>TP</td>
+                            <td>1</td>
                             <td>Completed</td>
-                            <td>
-                              <div class="badge badge-success badge-shadow">Yes</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <!-- <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-4">
-                                <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
-                              </div> -->
-                            </td>
                             <td>
                               4
                             </td>
                             <td>2020-05-07</td>
                             <td>Justin</td>
                             <td>796584</td>
-                            <td>INT</td>
-                            <td>$ 20,13</td>
-                            <td>120</td>
+                            <td>VID</td>
+                            <td>1</td>
                             <td>Completed</td>
-                            <td>
-                              <div class="badge badge-danger badge-shadow">No</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left"><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <!-- <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-5">
-                                <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
-                              </div> -->
-                            </td>
                             <td>
                               5
                             </td>
                             <td>2020-05-06</td>
                             <td>Justin</td>
                             <td>138459</td>
-                            <td>TP</td>
-                            <td>$ 46,31</td>
-                            <td>160</td>
+                            <td>SC1</td>
+                            <td>2</td>
                             <td>Completed</td>
-                            <td>
-                              <div class="badge badge-success badge-shadow">Yes</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <!-- <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-6">
-                                <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
-                              </div> -->
-                            </td>
                             <td>
                               6
                             </td>
                             <td>2020-05-06</td>
                             <td>Jhon</td>
-                            <td>529645</td>
-                            <td>IVS</td>
-                            <td>$ 0,00</td>
-                            <td>0</td>
-                            <td>Cancelled</td>
-                            <td>
-                              <div class="badge badge-success badge-shadow">Yes</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>552222</td>
+                            <td>SC1</td>
+                            <td>3</td>
+                            <td>Completed</td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <!-- <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-7">
-                                <label for="checkbox-7" class="custom-control-label">&nbsp;</label>
-                              </div> -->
-                            </td>
                             <td>
                               7
                             </td>
                             <td>2020-05-06</td>
                             <td>Jhon</td>
-                            <td>648735</td>
-                            <td>INT</td>
-                            <td>$ 0,00</td>
-                            <td>0</td>
-                            <td>Reschedule</td>
-                            <td>
-                              <div class="badge badge-light badge-shadow">No Required</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
-                            </td>
+                            <td>552222</td>
+                            <td>IVS</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>justification etc...</td>
                           </tr>
                           <tr>
-                            <td class="text-center pt-2">
-                              <!-- <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-8">
-                                <label for="checkbox-8" class="custom-control-label">&nbsp;</label>
-                              </div> -->
-                            </td>
                             <td>
                               8
                             </td>
                             <td>2020-05-05</td>
                             <td>Ian</td>
                             <td>589315</td>
-                            <td>IT</td>
-                            <td>$ 0,00</td>
-                            <td>0</td>
-                            <td>Hold</td>
-                            <td>
-                              <div class="badge badge-light badge-shadow">No Required</div>
-                            </td>
-                            <td>
-                              <a href="#"class="btn btn-icon icon-left"><i class="far fa-folder-open"></i>Details</a>
-                              <a href="#" class="btn btn-icon icon-left disabled"><i class="far fa-edit"></i>Edit</a>
-
-                              <!-- <div class="dropdown d-inline">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 28px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-eye"></i> Open</a>
-                                  <!- <a class="dropdown-item has-icon" href="#"><i class="far fa-edit"></i> Edit</a>
-                                  <a class="dropdown-item has-icon" href="#"><i class="fas fa-trash-alt"></i> Delete</a> ->
-                                </div>
-                              </div> -->
-                            </td>
+                            <td>TELS</td>
+                            <td>2</td>
+                            <td>Completed</td>
+                            <td>justification etc...</td>
                           </tr>
-                          
+
                         </tbody>
                       </table>
                     </div>
 
 
-                    
+
                   </div>
                 </div>
               </div>

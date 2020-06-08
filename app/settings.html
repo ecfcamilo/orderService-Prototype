@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/app.min.css">
   <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
   <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -227,7 +228,7 @@
             </li>
             -->
 
-            
+
 
             <li class="">
               <a href="timesheet.html" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
@@ -247,13 +248,22 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
+              <a href="#" class="nav-link has-dropdown"><i
+                  class="far fa-address-book"></i><span>Registrations</span></a>
               <ul class="dropdown-menu">
                 <li><a href="service.html">Job Codes</a></li>
                 <li><a href="product.html">Equipments</a></li>
                 <li><a href="trucks.html">Trucks</a></li>
                 <li><a href="#">Employees</a></li>
-                <li><a href="#">Company</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i
+                  class="far fa-address-book"></i><span>Reports</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="report_mauro.html">Jobs Reported</a></li>
+                <li><a href="#">Others</a></li>
               </ul>
             </li>
 
@@ -279,14 +289,29 @@
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
                 <div class="card">
-                  <div class="card-header">General</div>
+                  <div class="card-header">
+                    <h4>General</h4>
+                  </div>
                   <div class="card-body">
-
-
-
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <div class="form-group form-float">
+                          <div class="form-line">
+                            <label>What statuses should the manager approve?</label>
+                            <select class="form-control select2" multiple="">
+                              <option>Completed</option>
+                              <option>Cancelled</option>
+                              <option>Reschedule</option>
+                              <option>Hold</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="col-12 col-md-6 col-lg-6">
                 <div class="card">
                   <div class="card-header">
@@ -326,7 +351,66 @@
               </div>
             </div>
 
-          </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Company</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <div class="form-group form-float">
+                          <div class="form-line">
+                            <label>Business Name*</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <div class="form-group form-float">
+                          <div class="form-line">
+                            <label>Business Number*</label>
+                            <input type="number" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <div class="form-group form-float">
+                          <div class="form-line">
+                            <label>Address*</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-6">
+                        <div class="form-group form-float">
+                          <div class="form-line">
+                            <label>Contact*</label>
+                            <input type="tel" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-6">
+                        <div class="form-group form-float">
+                          <div class="form-line">
+                            <label>Email*</label>
+                            <input type="email" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
         </section>
       </div>
       <footer class="main-footer">
@@ -344,6 +428,7 @@
   <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
   <script src="assets/js/page/datatables.js"></script>
   <!-- JS Libraies -->
+  <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
   <!-- Page Specific JS File -->
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
