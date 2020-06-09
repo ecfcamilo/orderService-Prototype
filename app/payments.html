@@ -185,7 +185,7 @@
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
-              <a href="auth-login.html" class="dropdown-item has-icon text-danger">
+              <a href="../index.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
@@ -204,8 +204,8 @@
             <li class="active dropdown">
               <a href="" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
               <ul class="dropdown-menu">
-                <li><a href="index3.html">Dashboard Manager</a></li>
-                <li><a href="index4.html">Dashboard Technician</a></li>
+                <li id="menu_dash_manager"><a href="index3.html">Dashboard Manager</a></li>
+                <li id="menu_dash_technician"><a href="index4.html">Dashboard Technician</a></li>
               </ul>
             </li>
 
@@ -246,7 +246,7 @@
                 <li><a href="transfer.html">Movements</a></li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li  id="menu_registrations" class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
               <ul class="dropdown-menu">
                 <li><a href="service.html">Job Codes</a></li>
@@ -256,7 +256,7 @@
               </ul>
             </li>
 
-            <li class="dropdown">
+            <li id="menu_reports" class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i
                   class="far fa-address-book"></i><span>Reports</span></a>
               <ul class="dropdown-menu">
@@ -265,7 +265,7 @@
               </ul>
             </li>
 
-            <li class="">
+            <li id="menu_settings" class="">
               <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
             </li>
 
@@ -294,7 +294,7 @@
                       <a href="new_orders.html" class="btn btn-icon icon-left btn-info"><i class="fas fa-plus"></i> New Job Report</a>
                     </div> -->
                     <div class="card-header-action">
-                      <div class="buttons">
+                      <div class="buttons div_manager">
                         <a href="#" class="btn btn-outline-success" onclick="swal('Good Job', 'Jobs Reports successfully approved !', 'success');" >Approve</a>
                         <a href="#" class="btn btn-outline-danger"onclick="swal('Good Job', 'Jobs Reports successfully Disapproved !', 'success');">Disapprove</a>
                       </div>
@@ -305,7 +305,7 @@
                   <div class="card-body">
 
                     <div class="table-responsive">
-                      <table class="table table-striped" id="table-2">
+                      <table class="table table-striped" id="tableExport">
 
                         <thead>
                           <tr>
@@ -696,6 +696,23 @@
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+<script type="text/javascript">
+
+    console.log(sessionStorage.getItem("profile_key"))
+
+    if(sessionStorage.getItem("profile_key") == "man"){
+      $('#menu_dash_technician').hide();
+    }
+    else {
+      $('#menu_dash_manager').hide();
+      $('#menu_registrations').hide();
+      $('#menu_reports').hide();
+      $('#menu_settings').hide();
+      $('.div_manager').hide();
+
+    }
+
+  </script>
 </body>
 
 </html>

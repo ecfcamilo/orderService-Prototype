@@ -186,7 +186,7 @@
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
-              <a href="auth-login.html" class="dropdown-item has-icon text-danger">
+              <a href="../index.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
@@ -205,8 +205,8 @@
             <li class="active dropdown">
               <a href="" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
               <ul class="dropdown-menu">
-                <li><a href="index3.html">Dashboard Manager</a></li>
-                <li><a href="index4.html">Dashboard Technician</a></li>
+                <li id="menu_dash_manager"><a href="index3.html">Dashboard Manager</a></li>
+                <li id="menu_dash_technician"><a href="index4.html">Dashboard Technician</a></li>
               </ul>
             </li>
 
@@ -247,7 +247,7 @@
                 <li><a href="transfer.html">Movements</a></li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li  id="menu_registrations" class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
               <ul class="dropdown-menu">
                 <li><a href="service.html">Job Codes</a></li>
@@ -257,7 +257,7 @@
               </ul>
             </li>
 
-            <li class="dropdown">
+            <li id="menu_reports" class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i
                   class="far fa-address-book"></i><span>Reports</span></a>
               <ul class="dropdown-menu">
@@ -266,7 +266,7 @@
               </ul>
             </li>
 
-            <li class="">
+            <li id="menu_settings" class="">
               <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
             </li>
 
@@ -293,7 +293,7 @@
                       <a href="new_orders.html" class="btn btn-icon icon-left btn-info"><i class="fas fa-plus"></i> New Job Report</a>
                     </div> -->
                     <div class="card-header-action">
-                      <div class="buttons">
+                      <div class="buttons div_manager">
                         <a href="#" class="btn btn-outline-success" onclick="swal('Good Job', 'Jobs Reports successfully approved !', 'success');" >Approve</a>
                         <a href="#" class="btn btn-outline-danger"onclick="swal('Good Job', 'Jobs Reports successfully Disapproved !', 'success');">Disapprove</a>
                       </div>
@@ -320,7 +320,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-md-12 col-lg-1">
+                      <div class="col-12 col-md-12 col-lg-1 div_manager">
                         <div class="form-group form-float">
                           <div class="form-line">
                             <label>Technician</label>
@@ -341,55 +341,44 @@
                             <div class="input-group">
                               <select class="custom-select" id="inputGroupSelect05">
                                 <option>All</option>
-                                <option>SMTHM - Smart Home Automation</option>
-                                <option>VID - Video</option>
-                                <option>INT - Internet</option>
-                                <option>TEL - Telephone</option>
-                                <option>VT - Video/Telephone</option>
-                                <option>IV - Internet/Video</option>
-                                <option>IT - Internet/Telephone</option>
-                                <option>TP - Triple Play</option>
-                                <option>STB - Additional Set Top Box (excl the
-                                  first box installed)</option>
-                                <option>ERO - Eero (1 per Eero Installation,
-                                  includes all beacons)</option>
-                                <option>VIDS - Video/SH</option>
-                                <option>INTS - Internet/SH</option>
-                                <option>TELS - Telephone/SH</option>
-                                <option>VTS - Video/Telephone/SH</option>
-                                <option>IVS - Internet/Video/SH </option>
-                                <option>ITS - Internet/Telephone/SH</option>
-                                <option>TPS - Triple Play/SH</option>
-                                <option>SSEC - Smart Security / Smart Security +</option>
-                                <option>BRNZ - Residential Bronze Security
-                                  Package</option>
-                                <option>SIL - Residential Silver Security &
-                                  Automation Package</option>
-                                <option>GOLD - Residential Gold Security &
-                                  Automation Package</option>
-                                <option>R - Residential Upgrade/Repair</option>
-                                <option>BUSBRNZ - Commercial Bronze Security
-                                  Package</option>
-                                <option>BUSSIL - Commercial Silver Security &
-                                  Automation Package</option>
-                                <option>BUSGOLD - Commercial Gold Security &
-                                  Automation Package</option>
-                                <option>BUSR - Commercial Upgrade/Repair</option>
-                                <option>OCAM - Outdoor Camera</option>
-                                <option>THER - Thermostat</option>
-                                <option>SDEV - "Additional ""Standard Device""
-                                  incl I/D Camera, Doorbell, Deadbolt, Garage
-                                  Door Opener, Flood Detection, Smoke
-                                  Detector" </option>
-                                <option>SHPNL - Smarthome Panel</option>
-                                <option>SWAP - Swap The Equipament </option>
-                                <option>REL - Relocate, Rewire, Complicated Drop</option>
-                                <option>DISC - Disconnect</option>
-                                <option>TPIA - TPIA Installation </option>
-                                <option>TPIAT - TPIA Trouble Call</option>
-                                <option>RG6 - RG6 Drop Replacement</option>
-                                <option>RG11 - RG11 Drop Replacement</option>
-                                <option>SC1 - For Complex Jobs</option>
+                                <option>SMTHM </option>
+                                <option>VID</option>
+                                <option>INT</option>
+                                <option>TEL</option>
+                                <option>VT</option>
+                                <option>IV</option>
+                                <option>IT</option>
+                                <option>TP</option>
+                                <option>STB</option>
+                                <option>ERO</option>
+                                <option>VIDS</option>
+                                <option>INTS</option>
+                                <option>TELS</option>
+                                <option>VTS</option>
+                                <option>IVS</option>
+                                <option>ITS</option>
+                                <option>TPS</option>
+                                <option>SSEC</option>
+                                <option>BRNZ</option>
+                                <option>SIL</option>
+                                <option>GOLD</option>
+                                <option>R</option>
+                                <option>BUSBRNZ</option>
+                                <option>BUSSIL</option>
+                                <option>BUSGOLD</option>
+                                <option>BUSR</option>
+                                <option>OCAM</option>
+                                <option>THER</option>
+                                <option>SDEV</option>
+                                <option>SHPNL</option>
+                                <option>SWAP</option>
+                                <option>REL</option>
+                                <option>DISC</option>
+                                <option>TPIA</option>
+                                <option>TPIAT</option>
+                                <option>RG6</option>
+                                <option>RG11</option>
+                                <option>SC1</option>
                               </select>
                             </div>
                           </div>
@@ -436,12 +425,12 @@
                     </div>
 
                     <div class="table-responsive">
-                      <table class="table table-striped" id="table-2">
+                      <table class="table table-striped" id="tableExport">
 
                         <thead>
                           <tr>
-                            <th class="text-center">
-                              <div class="custom-checkbox custom-checkbox-table custom-control">
+                            <th class="text-center ">
+                              <div class="custom-checkbox custom-checkbox-table custom-control div_manager">
                                 <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
                                   class="custom-control-input" id="checkbox-all">
                                 <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
@@ -452,7 +441,7 @@
                             <th>Date</th>
                             <th>Technician</th>
                             <th>Job ID Client</th>
-                            <th>Desc. Service</th>
+                            <th>Job Code</th>
                             <th>Estimate Pay</th>
                             <th>Points</th>
                             <th>Job Status</th>
@@ -464,7 +453,7 @@
                         <tbody>
                           <tr>
                             <td class="text-center pt-2">
-                              <div class="custom-checkbox custom-control">
+                              <div class="custom-checkbox custom-control div_manager">
                                 <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
                                   id="checkbox-1">
                                 <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
@@ -490,7 +479,7 @@
                           </tr>
                           <tr>
                             <td class="text-center pt-2">
-                              <div class="custom-checkbox custom-control">
+                              <div class="custom-checkbox custom-control div_manager">
                                 <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
                                   id="checkbox-2">
                                 <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
@@ -848,6 +837,23 @@
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+<script type="text/javascript">
+
+    console.log(sessionStorage.getItem("profile_key"))
+
+    if(sessionStorage.getItem("profile_key") == "man"){
+      $('#menu_dash_technician').hide();
+    }
+    else {
+      $('#menu_dash_manager').hide();
+      $('#menu_registrations').hide();
+      $('#menu_reports').hide();
+      $('#menu_settings').hide();
+      $('.div_manager').hide();
+
+    }
+
+  </script>
 </body>
 
 </html>

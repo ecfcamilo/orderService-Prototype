@@ -211,78 +211,76 @@
                         </a>
                     </div>
                     <ul class="sidebar-menu">
-                        <li class="menu-header">Menu</li>
-                        <li class="active dropdown">
-                          <a href="" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="index3.html">Dashboard Manager</a></li>
-                            <li><a href="index4.html">Dashboard Technician</a></li>
-                          </ul>
-                        </li>
-            
-                        <li class="">
-                          <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
-                        </li>
-            
-                        <!-- <li class="">
-                          <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Job Codes</span></a>
-                        </li> -->
-            
-                        <!-- <li class="">
-                          <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Equipments</span></a>
-                        </li> -->
-            
-                        <!--
-                        <li class="">
-                          <a href="warehouse.html" class="nav-link"><i class="fas fa-archive"></i><span>Warehouse</span></a>
-                        </li>
-                        -->
-            
-                        
-            
-                        <li class="">
-                          <a href="timesheet.html" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
-                        </li>
-            
-                        <li class="">
-                          <a href="payments.html" class="nav-link"><i class="
-                            fas fa-money-bill"></i><span>Payments</span></a>
-                        </li>
-            
-                        <li class="dropdown">
-                          <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
-                          <ul class="dropdown-menu">
-                            <!-- <li><a href="trucks.html">Trucks</a></li> -->
-                            <li><a href="inventory.html">Inventory</a></li>
-                            <li><a href="transfer.html">Movements</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="service.html">Job Codes</a></li>
-                            <li><a href="product.html">Equipments</a></li>
-                            <li><a href="trucks.html">Trucks</a></li>
-                            <li><a href="#">Employees</a></li>
-                            <li><a href="#">Company</a></li>
-                          </ul>
-                        </li>
+            <li class="menu-header">Menu</li>
+            <li class="active dropdown">
+              <a href="" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
+              <ul class="dropdown-menu">
+                <li id="menu_dash_manager"><a href="index3.html">Dashboard Manager</a></li>
+                <li id="menu_dash_technician"><a href="index4.html">Dashboard Technician</a></li>
+              </ul>
+            </li>
 
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i
-                                class="far fa-address-book"></i><span>Reports</span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="report_mauro.html">Jobs Reported</a></li>
-                              <li><a href="#">Others</a></li>
-                              <li><a href="#">Etc..</a></li>
-                            </ul>
-                          </li>
+            <li class="">
+              <a href="orders.html" class="nav-link"><i class="fas fa-undo"></i><span>Job Report</span></a>
+            </li>
+
+            <!-- <li class="">
+              <a href="service.html" class="nav-link"><i class="fas fa-user-tie"></i><span>Job Codes</span></a>
+            </li> -->
+
+            <!-- <li class="">
+              <a href="product.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i><span>Equipments</span></a>
+            </li> -->
+
+            <!--
+            <li class="">
+              <a href="warehouse.html" class="nav-link"><i class="fas fa-archive"></i><span>Warehouse</span></a>
+            </li>
+            -->
+
             
-                        <li class="">
-                          <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
-                        </li>
-            
-                      </ul>
+
+            <li class="">
+              <a href="timesheet.html" class="nav-link"><i class="fas fa-clock"></i><span>Timesheet</span></a>
+            </li>
+
+            <li class="">
+              <a href="payments.html" class="nav-link"><i class="
+                fas fa-money-bill"></i><span>Payments</span></a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-warehouse"></i><span>Warehouse</span></a>
+              <ul class="dropdown-menu">
+                <!-- <li><a href="trucks.html">Trucks</a></li> -->
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="transfer.html">Movements</a></li>
+              </ul>
+            </li>
+            <li  id="menu_registrations" class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="far fa-address-book"></i><span>Registrations</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="service.html">Job Codes</a></li>
+                <li><a href="product.html">Equipments</a></li>
+                <li><a href="trucks.html">Trucks</a></li>
+                <li><a href="#">Employees</a></li> 
+              </ul>
+            </li>
+
+            <li id="menu_reports" class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i
+                  class="far fa-address-book"></i><span>Reports</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="report_mauro.html">Jobs Reported</a></li>
+                <li><a href="#">Others</a></li>
+              </ul>
+            </li>
+
+            <li id="menu_settings" class="">
+              <a href="settings.html" class="nav-link"><i class="fas fa-wrench"></i><span>Settings</span></a>
+            </li>
+
+          </ul>
                 </aside>
             </div>
             <!-- Main Content -->
@@ -852,6 +850,22 @@
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->
     <script src="assets/js/custom.js"></script>
+<script type="text/javascript">
+
+    console.log(sessionStorage.getItem("profile_key"))
+
+    if(sessionStorage.getItem("profile_key") == "man"){
+      $('#menu_dash_technician').hide();
+    }
+    else {
+      $('#menu_dash_manager').hide();
+      $('#menu_registrations').hide();
+      $('#menu_reports').hide();
+      $('#menu_settings').hide();
+
+    }
+
+  </script>
 </body>
 
 </html>

@@ -187,7 +187,7 @@
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
-              <a href="auth-login.html" class="dropdown-item has-icon text-danger">
+              <a href="../index.html" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
@@ -874,6 +874,22 @@
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+<script type="text/javascript">
+
+    console.log(sessionStorage.getItem("profile_key"))
+
+    if(sessionStorage.getItem("profile_key") == "man"){
+      $('#menu_dash_technician').hide();
+    }
+    else {
+      $('#menu_dash_manager').hide();
+      $('#menu_registrations').hide();
+      $('#menu_reports').hide();
+      $('#menu_settings').hide();
+
+    }
+
+  </script>
 </body>
 
 </html>
